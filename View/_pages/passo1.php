@@ -10,7 +10,7 @@ $paginaLocal = ' | Etapa 1 - Processamento de dados na produção';
     <meta name="author" content="Richardson K. Luz">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="../bootstrap-4.5.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../_css/styles.css" type="text/css">
     <!--   <link href="_css/pricing.css" rel="stylesheet"> -->
     <title>Indústria 4.0 <?php echo $paginaLocal ?></title>

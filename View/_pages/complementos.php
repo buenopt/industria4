@@ -45,7 +45,7 @@ $scriptsFrame = '<script src="https://kit.fontawesome.com/642bf06c9e.js" crossor
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
-<script src="../bootstrap-4.5.0-dist/js/bootstrap.min.js"></script>';
+<script src="../bootstrap/js/bootstrap.min.js"></script>';
 
 $modalAjuda = '
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
