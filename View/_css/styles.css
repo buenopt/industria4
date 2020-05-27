@@ -1,0 +1,34 @@
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#mobileResponsive {
+    font-size: 3em;
+    color: dodgerblue;
+    margin-top: 32%
+}
+
+#mobileResponsiveFooter {
+    margin-top: -5%;
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    #mobileResponsive {
+        margin-top: 60%;
+    }
+
+    #mobileResponsiveFooter {
+        margin-top: -25%;
+    }
+}
