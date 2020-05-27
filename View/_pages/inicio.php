@@ -18,7 +18,7 @@ $paginaLocal = ' | Inicio - Informações da pesquisa';
     <link rel="icon" href="../_img/favicon.svg" type="image/svg+xml">
 </head>
 <body class="text-center">
-
+<!-- Perguntas -->
 <div class="container-fluid center">
     <form class="form-signin">
         <i class="fas fa-industry" id="mobileResponsive"></i>
@@ -88,6 +88,8 @@ $paginaLocal = ' | Inicio - Informações da pesquisa';
         <p style="font-size: 0.7em">Conheça nossa política de pesquisa | <a href="carta-apresentacao.php"
                                                                             target="_blank">Leia aqui</a></p>
     </form>
+    <!-- Perguntas -->
+
     <footer id="mobileResponsiveFooter">
         <p style="font-size: 0.7em; font-weight: bold; color: gray" class="mt-5 mb-3 text-muted">&copy; 2020 |
             Richardson K. Luz <?php echo $versao ?></p>
