@@ -1,5 +1,7 @@
 <?php
 include_once('complementos.php');
+include('../../Class/ClassConexao.php');
+include('../../Class/ClassCrud.php');
 $paginaLocal = ' | Inicio - Informações da pesquisa';
 ?>
 <!DOCTYPE html>
@@ -18,19 +20,34 @@ $paginaLocal = ' | Inicio - Informações da pesquisa';
     <link rel="icon" href="../_img/favicon.svg" type="image/svg+xml">
 </head>
 <body class="text-center">
+
+<?php
+$Crud = new ClassCrud();
+$Crud->preparedStatements('asasas', array(1, 2, 3, 4, 5));
+
+?>
+
+
 <!-- Perguntas -->
 <div class="container-fluid center">
     <form class="form-signin">
+        <!-- Menu -->
         <i class="fas fa-industry" id="mobileResponsive"></i>
         <h1 style="font-size: 1.5em; font-weight: bold" class="h3 mb-3 font-weight-normal">Avaliação Industria 4.0</h1>
         <p style="font-size:0.7em; font-weight: bold; font-style: italic; color: dodgerblue">Projeto de mestrado</p>
         <p style="font-size: small">Saiba se sua empresa está preparada !</p>
+        <!-- Menu -->
+        <!-- Nome empresa -->
         <label for="inputEmail" class="sr-only">Insira nome da sua empresa</label>
         <input type="email" id="inputEmpresa" class="form-control" placeholder="Nome da sua empresa" required autofocus>
+        <!-- Nome empresa -->
         <p></p>
+        <!-- E-mail do respondente -->
         <label for="inputEmpresa" class="sr-only">Insira seu e-mail</label>
         <input type="text" id="inputEmail" class="form-control" placeholder="Seu e-mail" required>
+        <!-- E-mail do respondente -->
         <p></p>
+        <!-- Tipo de gestor -->
         <div class="form-group">
             <select id="inputNivel" class="form-control">
                 <option selected>Seu nível dentro da empresa</option>
@@ -38,7 +55,9 @@ $paginaLocal = ' | Inicio - Informações da pesquisa';
                 <option>Gestor Operacional</option>
             </select>
         </div>
+        <!-- Tipo de gestor -->
         <p></p>
+        <!-- Segmento das empresas -->
         <div class="form-group">
             <select id="inputSegmento" class="form-control">
                 <option>Confecção de artigos do vestuário e acessórios</option>
@@ -66,7 +85,9 @@ $paginaLocal = ' | Inicio - Informações da pesquisa';
                 <option>Metalurgia</option>
             </select>
         </div>
+        <!-- Segmento das empresas -->
         <p></p>
+        <!-- Qtde Funcionários -->
         <div class="form-group">
             <select id="inputQtdeFunc" class="form-control">
                 <option selected>Quantidade funcionários</option>
@@ -74,7 +95,9 @@ $paginaLocal = ' | Inicio - Informações da pesquisa';
                 <option>Acima 500 funcionários</option>
             </select>
         </div>
+        <!-- Qtde Funcionários -->
         <p></p>
+        <!-- Option sobre faturamento -->
         <div class="form-group">
             <select id="inputFatur" class="form-control">
                 <option selected>Faturamento anual</option>
@@ -82,6 +105,7 @@ $paginaLocal = ' | Inicio - Informações da pesquisa';
                 <option>Acima de R$ 20 milhões</option>
             </select>
         </div>
+        <!-- Option sobre faturamento -->
         <p></p>
         <a class="btn btn-lg btn-primary btn-block" href="passo1.php" title="Acesso a aplicação">Começar</a>
         <br/>

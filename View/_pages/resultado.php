@@ -25,12 +25,13 @@ echo $menuPrincipal;
 <main role="main" class="container">
     <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
         <h3 style="font-size: 1.4em; font-weight: bold; color: dodgerblue" class="display-4">Obrigado! </h3>
-        <p style="font-size: 0.9em; margin-right: 5%; margin-left: 5%" class="lead">O seu resultado abaixo é conforme
-            suas respostas as etapas anteriores.</p>
+        <p style="font-size: 0.9em; margin-right: 5%; margin-left: 5%" class="lead">Após as seis etapas da pesquisa com
+            uso da Ferramenta de Princípios Orientadores realizada na sua empresa.</p>
 
         <hr>
         <p style="text-align: center; font-size: 0.9em; color: slategrey">Sua indústria já esta :</p>
         <h1 style="color: dodgerblue; font-size: 3em;font-family: 'Anton', sans-serif;" class="text-center">15 %</h1>
+        <p style="text-align: center; font-size: 0.9em; color: slategrey">No conceito indústria 4.0</p>
         <hr>
     </div>
     <!-- Menu box -->
