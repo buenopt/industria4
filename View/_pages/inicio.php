@@ -20,17 +20,10 @@ $paginaLocal = ' | Inicio - Informações da pesquisa';
     <link rel="icon" href="../_img/favicon.svg" type="image/svg+xml">
 </head>
 <body class="text-center">
-
-<?php
-$Crud = new ClassCrud();
-$Crud->preparedStatements('asasas', array(1, 2, 3, 4, 5));
-
-?>
-
-
 <!-- Perguntas -->
 <div class="container-fluid center">
-    <form class="form-signin">
+    <form class="form-signin" name="FormCadastro" id="FormCadastro" method="post"
+          action="../../Controller/ControllerCadastro.php">
         <!-- Menu -->
         <i class="fas fa-industry" id="mobileResponsive"></i>
         <h1 style="font-size: 1.5em; font-weight: bold" class="h3 mb-3 font-weight-normal">Avaliação Industria 4.0</h1>
@@ -38,18 +31,20 @@ $Crud->preparedStatements('asasas', array(1, 2, 3, 4, 5));
         <p style="font-size: small">Saiba se sua empresa está preparada !</p>
         <!-- Menu -->
         <!-- Nome empresa -->
-        <label for="inputEmail" class="sr-only">Insira nome da sua empresa</label>
-        <input type="email" id="inputEmpresa" class="form-control" placeholder="Nome da sua empresa" required autofocus>
+        <label for="nomeEmpresa" class="sr-only">Insira nome da sua empresa</label>
+        <input type="text" id="nomeEmpresa" class="form-control" placeholder="Nome da sua empresa"
+               title="Insira o nome da sua empresa" required autofocus>
         <!-- Nome empresa -->
         <p></p>
         <!-- E-mail do respondente -->
-        <label for="inputEmpresa" class="sr-only">Insira seu e-mail</label>
-        <input type="text" id="inputEmail" class="form-control" placeholder="Seu e-mail" required>
+        <label for="emailEmpresa" class="sr-only">Insira seu e-mail</label>
+        <input type="email" id="emailEmpresa" class="form-control" placeholder="Seu e-mail" title="Insira seu e-mail"
+               required>
         <!-- E-mail do respondente -->
         <p></p>
         <!-- Tipo de gestor -->
         <div class="form-group">
-            <select id="inputNivel" class="form-control">
+            <select id="gestorEmpresa" class="form-control" title="Insira o seu nível de responsabilidade na empresa">
                 <option selected>Seu nível dentro da empresa</option>
                 <option>Gestor Executivo</option>
                 <option>Gestor Operacional</option>
@@ -59,9 +54,9 @@ $Crud->preparedStatements('asasas', array(1, 2, 3, 4, 5));
         <p></p>
         <!-- Segmento das empresas -->
         <div class="form-group">
-            <select id="inputSegmento" class="form-control">
-                <option>Confecção de artigos do vestuário e acessórios</option>
+            <select id="inputSegmento" class="form-control" title="Insira o segmento de atividade da empresa">
                 <option selected>Qual o segmento da empresa</option>
+                <option>Confecção de artigos do vestuário e acessórios</option>
                 <option>Fabricação de produtos alimentícios</option>
                 <option>Fabricação de bebidas</option>
                 <option>Fabricação de produtos têxteis</option>
@@ -89,7 +84,8 @@ $Crud->preparedStatements('asasas', array(1, 2, 3, 4, 5));
         <p></p>
         <!-- Qtde Funcionários -->
         <div class="form-group">
-            <select id="inputQtdeFunc" class="form-control">
+            <select id="inputQtdeFunc" class="form-control"
+                    title="Insira a quantidade de funcionários entre as opções.">
                 <option selected>Quantidade funcionários</option>
                 <option>Entre 101 á 499 funcionários</option>
                 <option>Acima 500 funcionários</option>
@@ -99,7 +95,7 @@ $Crud->preparedStatements('asasas', array(1, 2, 3, 4, 5));
         <p></p>
         <!-- Option sobre faturamento -->
         <div class="form-group">
-            <select id="inputFatur" class="form-control">
+            <select id="inputFatur" class="form-control" title="Insira o faturamento médio anual da empresa">
                 <option selected>Faturamento anual</option>
                 <option>Entre R$ 6 milhões a R$ 20 milhões</option>
                 <option>Acima de R$ 20 milhões</option>
@@ -107,11 +103,18 @@ $Crud->preparedStatements('asasas', array(1, 2, 3, 4, 5));
         </div>
         <!-- Option sobre faturamento -->
         <p></p>
-        <a class="btn btn-lg btn-primary btn-block" href="passo1.php" title="Acesso a aplicação">Começar</a>
+        <input class="btn btn-lg btn-primary btn-block" type="submit" title="Acesso a aplicação" value="Começar">
         <br/>
-        <p style="font-size: 0.7em">Conheça nossa política de pesquisa | <a href="carta-apresentacao.php"
-                                                                            target="_blank">Leia aqui</a></p>
+        <p style="font-size: 0.7em">Conheça nossa política de pesquisa | <a
+                    title="Clique aqui e leia a carta de apresentação na integra" href="carta-apresentacao.php"
+                    target="_blank">Leia aqui</a></p>
     </form>
+
+    <div class="alert alert-success" role="alert" id="Resultado">
+        Gravado com sucesso !
+    </div>
+
+
     <!-- Perguntas -->
 
     <footer id="mobileResponsiveFooter">

@@ -1,5 +1,5 @@
 <?php
-$versao = '<small style="font-size: 0.7em; font-style: italic">(versão 0.4)</small>';
+$versao = '<small style="font-size: 0.7em; font-style: italic">(versão 0.5)</small>';
 
 $menuPrincipal = '<div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
     <i style="font-size: 1em; color: dodgerblue" class="fas fa-industry"></i> &nbsp;&nbsp;&nbsp;<h5
