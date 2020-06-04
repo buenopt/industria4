@@ -6,15 +6,10 @@ $paginaLocal = ' | Etapa 1 - Processamento de dados na produção';
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="author" content="Richardson K. Luz">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../_css/styles.css" type="text/css">
-    <!--   <link href="_css/pricing.css" rel="stylesheet"> -->
-    <title>Indústria 4.0 <?php echo $paginaLocal ?></title>
-    <link rel="icon" href="../_img/favicon.svg" type="image/svg+xml">
+    <?php
+    echo $headPassos;
+    ?>
+    <title>Indústria 4.0 <?php echo $paginaLocal; ?></title>
 </head>
 <body>
 <!-- Menu principal -->
@@ -63,7 +58,6 @@ echo $modalAjuda;
 echo $rodapePrincipal;
 ?>
 <!-- Rodapé -->
-</div>
 <!--scripts frameworks -->
 <?php
 echo $scriptsFrame;

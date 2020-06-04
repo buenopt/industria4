@@ -1,7 +1,18 @@
 <?php
 $versao = '<small style="font-size: 0.7em; font-style: italic">(versão 0.5)</small>';
 
-$menuPrincipal = '<div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+$headPassos = '<meta charset="UTF-8">
+    <link rel="canonical" href="https://nuvem-d.com.br/industria4">
+    <meta name="author" content="Richardson K. Luz">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../_css/styles.css" type="text/css">
+    <!--   <link href="_css/pricing.css" rel="stylesheet"> -->    
+    <link rel="icon" href="../_img/favicon.svg" type="image/svg+xml">';
+
+$menuPrincipal = '
+<div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
     <i style="font-size: 1em; color: dodgerblue" class="fas fa-industry"></i> &nbsp;&nbsp;&nbsp;<h5
         class="my-0 mr-md-auto font-weight-normal" title="Ferramenta para avaliação para industria 4.0 desenvolvida por Richardson K. Luz">Avaliação industria 4.0</h5>
     <label style="font-style: italic;font-size: 0.8em; margin-right: 2%; color: dodgerblue; font-weight: bold" title="Projeto de mestrado de Richardson K. Luz">| Projeto
@@ -11,7 +22,7 @@ $menuPrincipal = '<div class="d-flex flex-column flex-md-row align-items-center 
         <button type="button" class="btn btn-info" data-toggle="modal" title="Precisando de ajuda ? Clique aqui !" data-target="#exampleModal">
             Ajuda
         </button>&nbsp;&nbsp;
-        <a class="btn btn-danger" title="Voltar para o inicio da ferramenta" href="inicio.php" alt="Botão de sair" >Sair</a>
+        <a class="btn btn-danger" title="Voltar para o inicio da ferramenta" href="inicio.php" >Sair</a>
     </div>
 </div>';
 
@@ -35,16 +46,12 @@ $rodapePrincipal = '<footer class="pt-4 my-md-5 pt-md-5 border-top">
             </ol>
         </div>
     </div>
-    <small style="text-align: center" class="d-block mb-3 text-muted" alt="Texto com o nome do desenvolvedor desta ferramenta" title="Nome do desenvolvedor desta ferramenta">&copy; 2020 | Richardson K. Luz</small>
+    <small style="text-align: center" class="d-block mb-3 text-muted" title="Nome do desenvolvedor desta ferramenta">&copy; 2020 | Richardson K. Luz</small>
 </footer>';
 
-$scriptsFrame = '<script src="https://kit.fontawesome.com/642bf06c9e.js" crossorigin="anonymous"></script>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
+$scriptsFrame = '<script src="../_js/642bf06c9e.js"></script>
+<script src="../_js/jquery-3.5.1.slim.min.js"></script>
+<script src="../_js/popper.min.js"></script>
 <script src="../bootstrap/js/bootstrap.min.js"></script>';
 
 $modalAjuda = '
@@ -66,7 +73,7 @@ $modalAjuda = '
                 <img style="margin-left: 30%; width: 30%; height: auto" src="../_img/comoFazer.gif">
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-danger" data-dismiss="modal" alt="Botão fechar modal" title="Clique aqui para fechar a janela de ajuda">Fechar</button>
+                <button type="button" class="btn btn-danger" data-dismiss="modal"  title="Clique aqui para fechar a janela de ajuda">Fechar</button>
             </div>
         </div>
     </div>

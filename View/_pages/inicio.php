@@ -110,10 +110,10 @@ $paginaLocal = ' | Inicio - Informações da pesquisa';
                     target="_blank">Leia aqui</a></p>
     </form>
 
+    <!-- adicionar function de resultado
     <div class="alert alert-success" role="alert" id="Resultado">
-        Gravado com sucesso !
     </div>
-
+-->
 
     <!-- Perguntas -->
 

@@ -5,16 +5,13 @@ $paginaLocal = ' | Resultado da avaliação da sua empresa';
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="author" content="Richardson K. Luz">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../_css/styles.css" type="text/css">
+    <?php
+    echo $headPassos;
+    ?>
     <title>Indústria 4.0 <?php echo $paginaLocal; ?></title>
-    <link rel="icon" href="../_img/favicon.svg" type="image/svg+xml">
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
 </head>
+
 <body>
 <!-- Menu principal -->
 <?php
@@ -30,7 +27,7 @@ echo $menuPrincipal;
 
         <hr>
         <p style="text-align: center; font-size: 0.9em; color: slategrey">Sua indústria já esta :</p>
-        <h1 style="color: dodgerblue; font-size: 3em;font-family: 'Anton', sans-serif;" class="text-center">15 %</h1>
+        <h1 style="color: dodgerblue; font-size: 3em;font-family: 'Anton', sans-serif;" class="text-center">20 %</h1>
         <p style="text-align: center; font-size: 0.9em; color: slategrey">No conceito indústria 4.0</p>
         <hr>
     </div>
@@ -41,7 +38,7 @@ echo $menuPrincipal;
         <!-- Etapa 1 -->
         <div class="media text-muted pt-3">
             <svg class="bd-placeholder-img mr-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg"
-                 preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 32x32">
+                 preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
                 <title>Etapa 1</title>
                 <rect width="100%" height="100%" fill="#007bff"/>
                 <text x="50%" y="50%" fill="#007bff" dy=".3em">32x32</text>
@@ -56,7 +53,7 @@ echo $menuPrincipal;
         <!-- Etapa 2 -->
         <div class="media text-muted pt-3">
             <svg class="bd-placeholder-img mr-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg"
-                 preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 32x32">
+                 preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
                 <title>Etapa 2</title>
                 <rect width="100%" height="100%" fill="#007bff"/>
                 <text x="50%" y="50%" fill="#007bff" dy=".3em">32x32</text>
@@ -70,7 +67,7 @@ echo $menuPrincipal;
         <!-- Etapa 3 -->
         <div class="media text-muted pt-3">
             <svg class="bd-placeholder-img mr-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg"
-                 preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 32x32">
+                 preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
                 <title>Etapa 3</title>
                 <rect width="100%" height="100%" fill="#007bff"/>
                 <text x="50%" y="50%" fill="#007bff" dy=".3em">32x32</text>
@@ -84,7 +81,7 @@ echo $menuPrincipal;
         <!-- Etapa 4 -->
         <div class="media text-muted pt-3">
             <svg class="bd-placeholder-img mr-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg"
-                 preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 32x32">
+                 preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
                 <title>Etapa 4</title>
                 <rect width="100%" height="100%" fill="#007bff"/>
                 <text x="50%" y="50%" fill="#007bff" dy=".3em">32x32</text>
@@ -98,7 +95,7 @@ echo $menuPrincipal;
         <!-- Etapa 5 -->
         <div class="media text-muted pt-3">
             <svg class="bd-placeholder-img mr-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg"
-                 preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 32x32">
+                 preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
                 <title>Etapa 5</title>
                 <rect width="100%" height="100%" fill="#007bff"/>
                 <text x="50%" y="50%" fill="#007bff" dy=".3em">32x32</text>
@@ -112,7 +109,7 @@ echo $menuPrincipal;
         <!-- Etapa 6 -->
         <div class="media text-muted pt-3">
             <svg class="bd-placeholder-img mr-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg"
-                 preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 32x32">
+                 preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
                 <title>Etapa 6</title>
                 <rect width="100%" height="100%" fill="#007bff"/>
                 <text x="50%" y="50%" fill="#007bff" dy=".3em">32x32</text>
@@ -141,7 +138,7 @@ echo $menuPrincipal;
     echo $rodapePrincipal;
     ?>
     <!-- Rodapé -->
-    </div>
+
 </main>
 <!--scripts frameworks -->
 <?php
