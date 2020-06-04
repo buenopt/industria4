@@ -70,7 +70,7 @@ $modalAjuda = '
                 <p style="text-align: center">Para selecionar clique no botão <b>SIM</b></p>
                 <p style="text-align: center; color: red; font-weight: bold; font-size: 0.7em">Para cada etapa só pode
                     ter umas (01) resposta<br/> com (SIM) das 5(cinco) opções.</p>
-                <img style="margin-left: 30%; width: 30%; height: auto" src="../_img/comoFazer.gif">
+                <img style="margin-left: 30%; width: 30%; height: auto" alt="Imagem como fazer" src="../_img/comoFazer.gif">
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-danger" data-dismiss="modal"  title="Clique aqui para fechar a janela de ajuda">Fechar</button>
@@ -79,5 +79,3 @@ $modalAjuda = '
     </div>
 </div>
 ';
-
-?>
