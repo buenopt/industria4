@@ -1,5 +1,4 @@
 <?php
-$nomeEmpresa = "FERNANDO BUENO";
 #id da empresa
 if (isset($_POST['idEmpresa'])) {
     $idEmpresa = filter_input(INPUT_POST, 'idEmpresa', FILTER_SANITIZE_SPECIAL_CHARS);
@@ -24,4 +23,40 @@ if (isset($_POST['emailEmpresa'])) {
     $emailEmpresa = filter_input(INPUT_GET, 'emailEmpresa', FILTER_SANITIZE_EMAIL);
 } else {
     $emailEmpresa = "";
+}
+
+#campo gestor da empresa
+if (isset($_POST['gestorEmpresa'])) {
+    $gestorEmpresa = filter_input(INPUT_POST, 'gestorEmpresa', FILTER_SANITIZE_SPECIAL_CHARS);
+} elseif (isset($_GET['gestorEmpresa'])) {
+    $gestorEmpresa = filter_input(INPUT_GET, 'gestorEmpresa', FILTER_SANITIZE_SPECIAL_CHARS);
+} else {
+    $gestorEmpresa = "";
+}
+
+#campo segmento da empresa
+if (isset($_POST['segEmpresa'])) {
+    $segEmpresa = filter_input(INPUT_POST, 'segEmpresa', FILTER_SANITIZE_SPECIAL_CHARS);
+} elseif (isset($_GET['segEmpresa'])) {
+    $segEmpresa = filter_input(INPUT_GET, 'segEmpresa', FILTER_SANITIZE_SPECIAL_CHARS);
+} else {
+    $segEmpresa = "";
+}
+
+#campo Qtde de funcionários da empresa
+if (isset($_POST['qtdeFunc'])) {
+    $qtdeFunc = filter_input(INPUT_POST, 'qtdeFunc', FILTER_SANITIZE_SPECIAL_CHARS);
+} elseif (isset($_GET['segEmpresa'])) {
+    $qtdeFunc = filter_input(INPUT_GET, 'qtdeFunc', FILTER_SANITIZE_SPECIAL_CHARS);
+} else {
+    $qtdeFunc = "";
+}
+
+#campo Qtde de faturamento da empresa
+if (isset($_POST['fatEmpresa'])) {
+    $fatEmpresa = filter_input(INPUT_POST, 'fatEmpresa', FILTER_SANITIZE_SPECIAL_CHARS);
+} elseif (isset($_GET['fatEmpresa'])) {
+    $fatEmpresa = filter_input(INPUT_GET, 'fatEmpresa', FILTER_SANITIZE_SPECIAL_CHARS);
+} else {
+    $fatEmpresa = "";
 }

@@ -2,6 +2,8 @@
 include_once('complementos.php');
 include('../../Class/ClassConexao.php');
 include('../../Class/ClassCrud.php');
+include('../../Class/Variaveis.php');
+$nomeEmpresa = "";
 $paginaLocal = ' | Inicio - Informações da pesquisa';
 ?>
 <!DOCTYPE html>
@@ -32,19 +34,21 @@ $paginaLocal = ' | Inicio - Informações da pesquisa';
         <!-- Menu -->
         <!-- Nome empresa -->
         <label for="nomeEmpresa" class="sr-only">Insira nome da sua empresa</label>
-        <input type="text" id="nomeEmpresa" class="form-control" placeholder="Nome da sua empresa"
+        <input type="text" id="nomeEmpresa" name="nomeEmpresa" class="form-control" placeholder="Nome da sua empresa"
                title="Insira o nome da sua empresa" required autofocus>
         <!-- Nome empresa -->
         <p></p>
         <!-- E-mail do respondente -->
         <label for="emailEmpresa" class="sr-only">Insira seu e-mail</label>
-        <input type="email" id="emailEmpresa" class="form-control" placeholder="Seu e-mail" title="Insira seu e-mail"
+        <input type="email" id="emailEmpresa" name="emailEmpresa" class="form-control" placeholder="Seu e-mail"
+               title="Insira seu e-mail"
                required>
         <!-- E-mail do respondente -->
         <p></p>
         <!-- Tipo de gestor -->
         <div class="form-group">
-            <select id="gestorEmpresa" class="form-control" title="Insira o seu nível de responsabilidade na empresa">
+            <select id="gestorEmpresa" name="gestorEmpresa" class="form-control"
+                    title="Insira o seu nível de responsabilidade na empresa">
                 <option selected>Seu nível dentro da empresa</option>
                 <option>Gestor Executivo</option>
                 <option>Gestor Operacional</option>
@@ -54,7 +58,8 @@ $paginaLocal = ' | Inicio - Informações da pesquisa';
         <p></p>
         <!-- Segmento das empresas -->
         <div class="form-group">
-            <select id="inputSegmento" class="form-control" title="Insira o segmento de atividade da empresa">
+            <select id="segEmpresa" name="segEmpresa" class="form-control"
+                    title="Insira o segmento de atividade da empresa">
                 <option selected>Qual o segmento da empresa</option>
                 <option>Confecção de artigos do vestuário e acessórios</option>
                 <option>Fabricação de produtos alimentícios</option>
@@ -84,7 +89,7 @@ $paginaLocal = ' | Inicio - Informações da pesquisa';
         <p></p>
         <!-- Qtde Funcionários -->
         <div class="form-group">
-            <select id="inputQtdeFunc" class="form-control"
+            <select id="qtdeFunc" name="qtdeFunc" class="form-control"
                     title="Insira a quantidade de funcionários entre as opções.">
                 <option selected>Quantidade funcionários</option>
                 <option>Entre 101 á 499 funcionários</option>
@@ -95,7 +100,8 @@ $paginaLocal = ' | Inicio - Informações da pesquisa';
         <p></p>
         <!-- Option sobre faturamento -->
         <div class="form-group">
-            <select id="inputFatur" class="form-control" title="Insira o faturamento médio anual da empresa">
+            <select id="fatEmpresa" name="fatEmpresa" class="form-control"
+                    title="Insira o faturamento médio anual da empresa">
                 <option selected>Faturamento anual</option>
                 <option>Entre R$ 6 milhões a R$ 20 milhões</option>
                 <option>Acima de R$ 20 milhões</option>
