@@ -1,9 +1,5 @@
 <?php
 include_once('complementos.php');
-include('../../Class/ClassConexao.php');
-include('../../Class/ClassCrud.php');
-include('../../Class/Variaveis.php');
-$nomeEmpresa = "";
 $paginaLocal = ' | Inicio - Informações da pesquisa';
 ?>
 <!DOCTYPE html>
@@ -89,7 +85,7 @@ $paginaLocal = ' | Inicio - Informações da pesquisa';
         <p></p>
         <!-- Qtde Funcionários -->
         <div class="form-group">
-            <select id="qtdeFunc" name="qtdeFunc" class="form-control"
+            <select id="qtdeFuncEmpresa" name="qtdeFuncEmpresa" class="form-control"
                     title="Insira a quantidade de funcionários entre as opções.">
                 <option selected>Quantidade funcionários</option>
                 <option>Entre 101 á 499 funcionários</option>
