@@ -8,10 +8,14 @@ abstract class ClassConexao
     protected function conectaDB()
     {
         try {
-            $Con = new PDO("mysql:host=127.0.0.1;dbname=industria4", "root", "root");
+            $Con = new PDO("mysql:host=localhost;dbname=industria4", "root", "root", array(
+                PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+                PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"
+            ));
             return $Con;
-        } catch (PDOException $Erro) {
-            return $Erro->getMessage();
+        } catch (PDOException $ErroConexaoBD) {
+            echo $ErroConexaoBD->getMessage() . ' <<<=== Erro de conexão com o banco de dados';
+            $Con = null;
         }
     }
 }

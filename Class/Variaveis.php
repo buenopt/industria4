@@ -19,45 +19,45 @@ if (isset($_POST['nomeEmpresa'])) {
 }
 #campo e-mail da empresa
 if (isset($_POST['emailEmpresa'])) {
-    $emailEmpresa = filter_input(INPUT_POST, 'emailEmpresa', FILTER_SANITIZE_SPECIAL_CHARS);
+    $emailEmpresa = filter_input(INPUT_POST, 'emailEmpresa', FILTER_SANITIZE_EMAIL);
 } elseif (isset($_GET['emailEmpresa'])) {
-    $emailEmpresa = filter_input(INPUT_GET, 'emailEmpresa', FILTER_SANITIZE_SPECIAL_CHARS);
+    $emailEmpresa = filter_input(INPUT_GET, 'emailEmpresa', FILTER_SANITIZE_EMAIL);
 } else {
     $emailEmpresa = "";
 }
 
 #campo gestor da empresa
 if (isset($_POST['gestorEmpresa'])) {
-    $gestorEmpresa = filter_input(INPUT_POST, 'gestorEmpresa', FILTER_SANITIZE_SPECIAL_CHARS);
+    $fkgestorEmpresa = filter_input(INPUT_POST, 'gestorEmpresa', FILTER_SANITIZE_SPECIAL_CHARS);
 } elseif (isset($_GET['gestorEmpresa'])) {
-    $gestorEmpresa = filter_input(INPUT_GET, 'gestorEmpresa', FILTER_SANITIZE_SPECIAL_CHARS);
+    $fkgestorEmpresa = filter_input(INPUT_GET, 'gestorEmpresa', FILTER_SANITIZE_SPECIAL_CHARS);
 } else {
-    $gestorEmpresa = "";
+    $fkgestorEmpresa = "";
 }
 
 #campo segmento da empresa
 if (isset($_POST['segEmpresa'])) {
-    $segEmpresa = filter_input(INPUT_POST, 'segEmpresa', FILTER_SANITIZE_SPECIAL_CHARS);
+    $fksegEmpresa = filter_input(INPUT_POST, 'segEmpresa', FILTER_SANITIZE_SPECIAL_CHARS);
 } elseif (isset($_GET['segEmpresa'])) {
-    $segEmpresa = filter_input(INPUT_GET, 'segEmpresa', FILTER_SANITIZE_SPECIAL_CHARS);
+    $fksegEmpresa = filter_input(INPUT_GET, 'segEmpresa', FILTER_SANITIZE_SPECIAL_CHARS);
 } else {
-    $segEmpresa = "";
+    $fksegEmpresa = "";
 }
 
 #campo Qtde de funcionários da empresa
 if (isset($_POST['qtdeFuncEmpresa'])) {
-    $qtdeFuncEmpresa = filter_input(INPUT_POST, 'qtdeFuncEmpresa', FILTER_SANITIZE_SPECIAL_CHARS);
+    $fkqtdeFuncEmpresa = filter_input(INPUT_POST, 'qtdeFuncEmpresa', FILTER_SANITIZE_SPECIAL_CHARS);
 } elseif (isset($_GET['qtdeFuncEmpresa'])) {
-    $qtdeFuncEmpresa = filter_input(INPUT_GET, 'qtdeFuncEmpresa', FILTER_SANITIZE_SPECIAL_CHARS);
+    $fkqtdeFuncEmpresa = filter_input(INPUT_GET, 'qtdeFuncEmpresa', FILTER_SANITIZE_SPECIAL_CHARS);
 } else {
-    $qtdeFuncEmpresa = "";
+    $fkqtdeFuncEmpresa = "";
 }
 
 #campo Qtde de faturamento da empresa
 if (isset($_POST['fatEmpresa'])) {
-    $fatEmpresa = filter_input(INPUT_POST, 'fatEmpresa', FILTER_SANITIZE_SPECIAL_CHARS);
+    $fkfatEmpresa = filter_input(INPUT_POST, 'fatEmpresa', FILTER_SANITIZE_SPECIAL_CHARS);
 } elseif (isset($_GET['fatEmpresa'])) {
-    $fatEmpresa = filter_input(INPUT_GET, 'fatEmpresa', FILTER_SANITIZE_SPECIAL_CHARS);
+    $fkfatEmpresa = filter_input(INPUT_GET, 'fatEmpresa', FILTER_SANITIZE_SPECIAL_CHARS);
 } else {
-    $fatEmpresa = "";
+    $fkfatEmpresa = "";
 }

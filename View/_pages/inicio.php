@@ -5,22 +5,17 @@ $paginaLocal = ' | Inicio - Informações da pesquisa';
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <link rel="manifest" href="../../manifest.json">
-    <link rel="canonical" href="https://nuvem-d.com.br/industria4">
-    <meta name="author" content="Richardson K. Luz">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
-    <link href="../_css/signin.css" rel="stylesheet">
-    <link rel="stylesheet" href="../_css/styles.css" type="text/css">
+    <?php
+    echo $headPassos;
+    ?>
     <title>Indústria 4.0 <?php echo $paginaLocal ?></title>
-    <link rel="icon" href="../_img/favicon.svg" type="image/svg+xml">
+    <!-- CSS Especifico -->
+    <link href="../_css/signin.css" rel="stylesheet">
 </head>
 <body class="text-center">
 <!-- Perguntas -->
 <div class="container-fluid center">
-    <form class="form-signin" name="FormCadastro" id="FormCadastro" method="post"
+    <form class="form-signin" name="FormCadastro" id="FormCadastro" method="POST"
           action="../../Controller/ControllerCadastro.php">
         <!-- Menu -->
         <i class="fas fa-industry" id="mobileResponsive"></i>
@@ -44,41 +39,43 @@ $paginaLocal = ' | Inicio - Informações da pesquisa';
         <!-- Tipo de gestor -->
         <div class="form-group">
             <select id="gestorEmpresa" name="gestorEmpresa" class="form-control"
-                    title="Insira o seu nível de responsabilidade na empresa">
-                <option selected>Seu nível dentro da empresa</option>
-                <option>Gestor Executivo</option>
-                <option>Gestor Operacional</option>
+                    title="Insira o seu nível de responsabilidade na empresa" required>
+                <option selected value="">Seu nível dentro da empresa</option>
+                <option value="10">Gestor Executivo</option>
+                <option value="11">Gestor Operacional</option>
             </select>
         </div>
+
+
         <!-- Tipo de gestor -->
         <p></p>
         <!-- Segmento das empresas -->
         <div class="form-group">
             <select id="segEmpresa" name="segEmpresa" class="form-control"
-                    title="Insira o segmento de atividade da empresa">
-                <option selected>Qual o segmento da empresa</option>
-                <option>Confecção de artigos do vestuário e acessórios</option>
-                <option>Fabricação de produtos alimentícios</option>
-                <option>Fabricação de bebidas</option>
-                <option>Fabricação de produtos têxteis</option>
-                <option>Fabricação de produtos de madeira</option>
-                <option>Fabricação de celulose, papel e produtos de papel</option>
-                <option>Fabricação de produtos derivados do petróleo</option>
-                <option>Fabricação de biocombustíveis</option>
-                <option>Fabricação de produtos químicos</option>
-                <option>Fabricação de produtos farmoquímicos e farmacêuticos</option>
-                <option>Fabricação de produtos de borracha e de material plástico</option>
-                <option>Fabricação de produtos de minerais não metálicos</option>
-                <option>Fabricação de produtos de metal, exceto máquinas e equipamentos</option>
-                <option>Fabricação de equipamentos de informática, produtos eletrônicos e ópticos</option>
-                <option>Fabricação de máquinas, aparelhos e materiais elétricos</option>
-                <option>Fabricação de máquinas, aparelhos e materiais elétricos</option>
-                <option>Fabricação de veículos automotores, reboques e carrocerias</option>
-                <option>Fabricação de outros equipamentos de transporte, exceto veículos automotores</option>
-                <option>Fabricação de móveis</option>
-                <option>Fabricação de produtos diversos</option>
-                <option>Manutenção, reparação e instalação de máquinas e equipamentos</option>
-                <option>Metalurgia</option>
+                    title="Insira o segmento de atividade da empresa" required>
+                <option selected value="">Qual o segmento da empresa</option>
+                <option value="20">Confecção de artigos do vestuário e acessórios</option>
+                <option value="21">Fabricação de produtos alimentícios</option>
+                <option value="22">Fabricação de bebidas</option>
+                <option value="23">Fabricação de produtos têxteis</option>
+                <option value="24">Fabricação de produtos de madeira</option>
+                <option value="25">Fabricação de celulose, papel e produtos de papel</option>
+                <option value="26">Fabricação de produtos derivados do petróleo</option>
+                <option value="27">Fabricação de biocombustíveis</option>
+                <option value="28">Fabricação de produtos químicos</option>
+                <option value="29">Fabricação de produtos farmoquímicos e farmacêuticos</option>
+                <option value="30">Fabricação de produtos de borracha e de material plástico</option>
+                <option value="31">Fabricação de produtos de minerais não metálicos</option>
+                <option value="32">Fabricação de produtos de metal, exceto máquinas e equipamentos</option>
+                <option value="33">Fabricação de equipamentos de informática, produtos eletrônicos e ópticos</option>
+                <option value="34">Fabricação de máquinas, aparelhos e materiais elétricos</option>
+                <option value="35">Fabricação de máquinas, aparelhos e materiais elétricos</option>
+                <option value="36">Fabricação de veículos automotores, reboques e carrocerias</option>
+                <option value="37">Fabricação de outros equipamentos de transporte, exceto veículos automotores</option>
+                <option value="38">Fabricação de móveis</option>
+                <option value="39">Fabricação de produtos diversos</option>
+                <option value="40">Manutenção, reparação e instalação de máquinas e equipamentos</option>
+                <option value="41">Metalurgia</option>
             </select>
         </div>
         <!-- Segmento das empresas -->
@@ -86,10 +83,10 @@ $paginaLocal = ' | Inicio - Informações da pesquisa';
         <!-- Qtde Funcionários -->
         <div class="form-group">
             <select id="qtdeFuncEmpresa" name="qtdeFuncEmpresa" class="form-control"
-                    title="Insira a quantidade de funcionários entre as opções.">
-                <option selected>Quantidade funcionários</option>
-                <option>Entre 101 á 499 funcionários</option>
-                <option>Acima 500 funcionários</option>
+                    title="Insira a quantidade de funcionários entre as opções." required>
+                <option selected value="">Quantidade funcionários</option>
+                <option value="50">Entre 101 á 499 funcionários</option>
+                <option value="51">Acima 500 funcionários</option>
             </select>
         </div>
         <!-- Qtde Funcionários -->
@@ -97,26 +94,21 @@ $paginaLocal = ' | Inicio - Informações da pesquisa';
         <!-- Option sobre faturamento -->
         <div class="form-group">
             <select id="fatEmpresa" name="fatEmpresa" class="form-control"
-                    title="Insira o faturamento médio anual da empresa">
-                <option selected>Faturamento anual</option>
-                <option>Entre R$ 6 milhões a R$ 20 milhões</option>
-                <option>Acima de R$ 20 milhões</option>
+                    title="Insira o faturamento médio anual da empresa" required>
+                <option selected value="">Faturamento anual</option>
+                <option value="60">Entre R$ 6 milhões a R$ 20 milhões</option>
+                <option value="61">Acima de R$ 20 milhões</option>
             </select>
         </div>
         <!-- Option sobre faturamento -->
         <p></p>
-        <input class="btn btn-lg btn-primary btn-block" type="submit" title="Acesso a aplicação" value="Começar">
+        <input class="btn btn-lg btn-primary btn-block" type="submit" title="Acesso a aplicação" value="Começar"
+               onclick="validarFormulario()">
         <br/>
         <p style="font-size: 0.7em">Conheça nossa política de pesquisa | <a
                     title="Clique aqui e leia a carta de apresentação na integra" href="carta-apresentacao.php"
                     target="_blank">Leia aqui</a></p>
     </form>
-
-    <!-- adicionar function de resultado
-    <div class="alert alert-success" role="alert" id="Resultado">
-    </div>
--->
-
     <!-- Perguntas -->
 
     <footer id="mobileResponsiveFooter">
