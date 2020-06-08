@@ -15,11 +15,11 @@ $passo1 = '<!-- Primeira pergunta -->
                 <hr>
                 <div class="custom-control custom-switch">
                     <label style="font-weight: bold;color: dodgerblue;margin-left: -30%">Responda:</label><br/>
-                    <input type="checkbox" class="custom-control-input" id="passo1_1">
-                    <label class="custom-control-label" for="passo1_1">SIM </label>
+                    <input type="checkbox" class="custom-control-input" id="botao1" onclick="habilitar1()" >
+                    <label class="custom-control-label" for="botao1">SIM </label>                    
                 </div>
             </div>
-        </div>
+        </div>       
         <!-- Primeira pergunta -->
         <!-- Segunda pergunta -->
         <div class="card mb-4 shadow-sm">
@@ -34,8 +34,8 @@ $passo1 = '<!-- Primeira pergunta -->
                 <hr>
                 <div class="custom-control custom-switch">
                     <label style="font-weight: bold;color: dodgerblue;margin-left: -30%">Responda:</label><br/>
-                    <input type="checkbox" class="custom-control-input" id="passo1_2">
-                    <label class="custom-control-label" for="passo1_2">SIM </label>
+                    <input type="checkbox" class="custom-control-input" id="botao2" onclick="habilitar2()">
+                    <label class="custom-control-label" for="botao2">SIM </label>
                 </div>
             </div>
         </div>
@@ -96,7 +96,7 @@ $passo1 = '<!-- Primeira pergunta -->
                 </div>
             </div>
         </div>
-    </div>
+    </div>    
     <!-- Quinta pergunta -->';
 
 $passo2 = '<!-- Primeira pergunta -->
