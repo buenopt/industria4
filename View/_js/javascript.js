@@ -15,21 +15,25 @@ $("FormCadastro").on('submit', function (event) {
 });
 
 function habilitar1() {
-    $("#botao2,#botao3,#botao4,#passo1_1").attr("disabled", true);
+    $("#botao2,#botao3,#botao4,#botao5").attr("disabled", true);
 }
 
 function habilitar2() {
-    $("#botao1,#botao3,#botao4").attr("disabled", true);
+    $("#botao1,#botao3,#botao4,#botao5").attr("disabled", true);
 }
 
 function habilitar3() {
-    $("#botao1,#botao2,#botao4").attr("disabled", true);
+    $("#botao1,#botao2,#botao4,#botao5").attr("disabled", true);
 }
 
 function habilitar4() {
-    $("#botao1,#botao2,#botao3").attr("disabled", true);
+    $("#botao1,#botao2,#botao3,#botao5").attr("disabled", true);
+}
+
+function habilitar5() {
+    $("#botao1,#botao2,#botao3,#botao4").attr("disabled", true);
 }
 
 function limpar() {
-    $("#botao1,#botao2,#botao2,#botao3,#botao4").removeAttr("disabled");
+    $("#botao1,#botao2,#botao2,#botao3,#botao4,#botao5").removeAttr("disabled");
 }

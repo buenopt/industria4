@@ -44,9 +44,10 @@ echo $passo5;
 <!-- container de perguntas -->
 <!-- Botão continuar -->
 <div style="text-align: center">
-    <a class="btn btn-secondary" href="passo4.php"><i class="fas fa-backward"></i><i class="fas fa-backward"></i>
+    <a class="btn btn-secondary" href="passo4.php"><i class="fas fa-backward"></i>
         Voltar </a>
-    <a class="btn btn-success" href="passo6.php">Continuar <i class="fas fa-forward"></i><i
+    <input style="color: white" class="btn btn-info" type="button" value="Limpar" onclick="limpar()">
+    <a class="btn btn-success" href="passo6.php">Continuar <i
                 class="fas fa-forward"></i></a>
 </div>
 <div style="margin-top: 1em"></div>

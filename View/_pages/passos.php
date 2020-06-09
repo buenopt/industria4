@@ -13,10 +13,9 @@ $passo1 = '<!-- Primeira pergunta -->
                     <li style="font-size: 0.7em;text-align: justify "></li>
                 </ul>
                 <hr>
-                <div class="custom-control custom-switch">
-                    <label style="font-weight: bold;color: dodgerblue;margin-left: -30%">Responda:</label><br/>
-                    <input type="checkbox" class="custom-control-input" id="botao1" onclick="habilitar1()" >
-                    <label class="custom-control-label" for="botao1">SIM </label>                    
+                <div style="text-align: center">
+                    <label style="font-weight: bold;color: dodgerblue">Escolher :</label><br/>
+                    <button type="button" value="0" id="botao1" class="btn btn-primary" onclick="habilitar1();">X</button>      
                 </div>
             </div>
         </div>       
@@ -32,10 +31,9 @@ $passo1 = '<!-- Primeira pergunta -->
                     <li></li>
                 </ul>
                 <hr>
-                <div class="custom-control custom-switch">
-                    <label style="font-weight: bold;color: dodgerblue;margin-left: -30%">Responda:</label><br/>
-                    <input type="checkbox" class="custom-control-input" id="botao2" onclick="habilitar2()">
-                    <label class="custom-control-label" for="botao2">SIM </label>
+                <div style="text-align: center">
+                    <label style="font-weight: bold;color: dodgerblue">Escolher :</label><br/>
+                    <button type="button" value="25" id="botao2" class="btn btn-primary" onclick="habilitar2();">X</button>      
                 </div>
             </div>
         </div>
@@ -51,10 +49,9 @@ $passo1 = '<!-- Primeira pergunta -->
                     <li></li>
                 </ul>
                 <hr>
-                <div class="custom-control custom-switch">
-                    <label style="font-weight: bold;color: dodgerblue;margin-left: -30%">Responda:</label><br/>
-                    <input type="checkbox" class="custom-control-input" id="passo1_3">
-                    <label class="custom-control-label" for="passo1_3">SIM </label>
+                <div style="text-align: center">
+                    <label style="font-weight: bold;color: dodgerblue">Escolher :</label><br/>
+                    <button type="button" value="50" id="botao3" class="btn btn-primary" onclick="habilitar3();">X</button>      
                 </div>
             </div>
         </div>
@@ -70,10 +67,9 @@ $passo1 = '<!-- Primeira pergunta -->
                     <li></li>
                 </ul>
                 <hr>
-                <div class="custom-control custom-switch">
-                    <label style="font-weight: bold;color: dodgerblue;margin-left: -30%">Responda:</label><br/>
-                    <input type="checkbox" class="custom-control-input" id="passo1_4">
-                    <label class="custom-control-label" for="passo1_4">SIM </label>
+                <div style="text-align: center">
+                    <label style="font-weight: bold;color: dodgerblue">Escolher :</label><br/>
+                    <button type="button" value="75" id="botao4" class="btn btn-primary" onclick="habilitar4();">X</button>      
                 </div>
             </div>
         </div>
@@ -89,10 +85,9 @@ $passo1 = '<!-- Primeira pergunta -->
                     <li></li>
                 </ul>
                 <hr>
-                <label style="font-weight: bold;color: dodgerblue;margin-left: -30%">Responda:</label><br/>
-                <div class="custom-control custom-switch">
-                    <input type="checkbox" class="custom-control-input" id="passo1_5">
-                    <label class="custom-control-label" for="passo1_5">SIM </label>
+                <div style="text-align: center">
+                    <label style="font-weight: bold;color: dodgerblue">Escolher :</label><br/>
+                    <button type="button" value="100" id="botao5" class="btn btn-primary" onclick="habilitar5();">X</button>      
                 </div>
             </div>
         </div>
@@ -111,10 +106,9 @@ $passo2 = '<!-- Primeira pergunta -->
                     <li></li>
                 </ul>
                 <hr>
-                <div class="custom-control custom-switch">
-                    <label style="font-weight: bold;color: dodgerblue;margin-left: -30%">Responda:</label><br/>
-                    <input type="checkbox" class="custom-control-input" id="passo2_1">
-                    <label class="custom-control-label" for="passo2_1">SIM </label>
+                <div style="text-align: center">
+                    <label style="font-weight: bold;color: dodgerblue">Escolher :</label><br/>
+                    <button type="button" value="0" id="botao1" class="btn btn-primary" onclick="habilitar1();">X</button>      
                 </div>
             </div>
         </div>
@@ -129,10 +123,9 @@ $passo2 = '<!-- Primeira pergunta -->
                     <li></li>
                 </ul>
                 <hr>
-                <div class="custom-control custom-switch">
-                    <label style="font-weight: bold;color: dodgerblue;margin-left: -30%">Responda:</label><br/>
-                    <input type="checkbox" class="custom-control-input" id="passo2_2">
-                    <label class="custom-control-label" for="passo2_2">SIM </label>
+               <div style="text-align: center">
+                    <label style="font-weight: bold;color: dodgerblue">Escolher :</label><br/>
+                    <button type="button" value="25" id="botao2" class="btn btn-primary" onclick="habilitar2();">X</button>      
                 </div>
             </div>
         </div>
@@ -148,10 +141,9 @@ $passo2 = '<!-- Primeira pergunta -->
                     <li></li>
                 </ul>
                 <hr>
-                <div class="custom-control custom-switch">
-                    <label style="font-weight: bold;color: dodgerblue;margin-left: -30%">Responda:</label><br/>
-                    <input type="checkbox" class="custom-control-input" id="passo2_3">
-                    <label class="custom-control-label" for="passo2_3">SIM </label>
+                <div style="text-align: center">
+                    <label style="font-weight: bold;color: dodgerblue">Escolher :</label><br/>
+                    <button type="button" value="50" id="botao3" class="btn btn-primary" onclick="habilitar3();">X</button>      
                 </div>
             </div>
         </div>
@@ -166,10 +158,9 @@ $passo2 = '<!-- Primeira pergunta -->
                     <li></li>
                 </ul>
                 <hr>
-                <div class="custom-control custom-switch">
-                    <label style="font-weight: bold;color: dodgerblue;margin-left: -30%">Responda:</label><br/>
-                    <input type="checkbox" class="custom-control-input" id="passo2_4">
-                    <label class="custom-control-label" for="passo2_4">SIM </label>
+                <div style="text-align: center">
+                    <label style="font-weight: bold;color: dodgerblue">Escolher :</label><br/>
+                    <button type="button" value="75" id="botao4" class="btn btn-primary" onclick="habilitar4();">X</button>      
                 </div>
             </div>
         </div>
@@ -186,9 +177,9 @@ $passo2 = '<!-- Primeira pergunta -->
                 </ul>
                 <hr>
                 <label style="font-weight: bold;color: dodgerblue;margin-left: -30%">Responda:</label><br/>
-                <div class="custom-control custom-switch">
-                    <input type="checkbox" class="custom-control-input" id="passo2_5">
-                    <label class="custom-control-label" for="passo2_5">SIM </label>
+                <div style="text-align: center">
+                    <label style="font-weight: bold;color: dodgerblue">Escolher :</label><br/>
+                    <button type="button" value="100" id="botao5" class="btn btn-primary" onclick="habilitar5();">X</button>      
                 </div>
             </div>
         </div>
@@ -208,10 +199,9 @@ $passo3 = '<!-- Primeira pergunta -->
                     <li></li>
                 </ul>
                 <hr>
-                <div class="custom-control custom-switch">
-                    <label style="font-weight: bold;color: dodgerblue;margin-left: -30%">Responda:</label><br/>
-                    <input type="checkbox" class="custom-control-input" id="passo2_1">
-                    <label class="custom-control-label" for="passo2_1">SIM </label>
+                <div style="text-align: center">
+                    <label style="font-weight: bold;color: dodgerblue">Escolher :</label><br/>
+                    <button type="button" value="0" id="botao1" class="btn btn-primary" onclick="habilitar1();">X</button>      
                 </div>
             </div>
         </div>
@@ -227,10 +217,9 @@ $passo3 = '<!-- Primeira pergunta -->
                     <li></li>
                 </ul>
                 <hr>
-                <div class="custom-control custom-switch">
-                    <label style="font-weight: bold;color: dodgerblue;margin-left: -30%">Responda:</label><br/>
-                    <input type="checkbox" class="custom-control-input" id="passo2_2">
-                    <label class="custom-control-label" for="passo2_2">SIM </label>
+                <div style="text-align: center">
+                    <label style="font-weight: bold;color: dodgerblue">Escolher :</label><br/>
+                    <button type="button" value="25" id="botao2" class="btn btn-primary" onclick="habilitar2();">X</button>      
                 </div>
             </div>
         </div>
@@ -246,10 +235,9 @@ $passo3 = '<!-- Primeira pergunta -->
                     <li></li>
                 </ul>
                 <hr>
-                <div class="custom-control custom-switch">
-                    <label style="font-weight: bold;color: dodgerblue;margin-left: -30%">Responda:</label><br/>
-                    <input type="checkbox" class="custom-control-input" id="passo2_3">
-                    <label class="custom-control-label" for="passo2_3">SIM </label>
+                <div style="text-align: center">
+                    <label style="font-weight: bold;color: dodgerblue">Escolher :</label><br/>
+                    <button type="button" value="50" id="botao3" class="btn btn-primary" onclick="habilitar3();">X</button>      
                 </div>
             </div>
         </div>
@@ -265,10 +253,9 @@ $passo3 = '<!-- Primeira pergunta -->
                     <li></li>
                 </ul>
                 <hr>
-                <div class="custom-control custom-switch">
-                    <label style="font-weight: bold;color: dodgerblue;margin-left: -30%">Responda:</label><br/>
-                    <input type="checkbox" class="custom-control-input" id="passo2_4">
-                    <label class="custom-control-label" for="passo2_4">SIM </label>
+                <div style="text-align: center">
+                    <label style="font-weight: bold;color: dodgerblue">Escolher :</label><br/>
+                    <button type="button" value="75" id="botao4" class="btn btn-primary" onclick="habilitar4();">X</button>      
                 </div>
             </div>
         </div>
@@ -284,10 +271,9 @@ $passo3 = '<!-- Primeira pergunta -->
                     <li></li>
                 </ul>
                 <hr>
-                <label style="font-weight: bold;color: dodgerblue;margin-left: -30%">Responda:</label><br/>
-                <div class="custom-control custom-switch">
-                    <input type="checkbox" class="custom-control-input" id="passo2_5">
-                    <label class="custom-control-label" for="passo2_5">SIM </label>
+                <div style="text-align: center">
+                    <label style="font-weight: bold;color: dodgerblue">Escolher :</label><br/>
+                    <button type="button" value="100" id="botao5" class="btn btn-primary" onclick="habilitar5();">X</button>      
                 </div>
             </div>
         </div>
@@ -307,10 +293,9 @@ $passo4 = '<!-- Primeira pergunta -->
                     <li></li>
                 </ul>
                 <hr>
-                <div class="custom-control custom-switch">
-                    <label style="font-weight: bold;color: dodgerblue;margin-left: -30%">Responda:</label><br/>
-                    <input type="checkbox" class="custom-control-input" id="passo2_1">
-                    <label class="custom-control-label" for="passo2_1">SIM </label>
+                <div style="text-align: center">
+                    <label style="font-weight: bold;color: dodgerblue">Escolher :</label><br/>
+                    <button type="button" value="0" id="botao1" class="btn btn-primary" onclick="habilitar1();">X</button>      
                 </div>
             </div>
         </div>
@@ -326,10 +311,9 @@ $passo4 = '<!-- Primeira pergunta -->
                     <li></li>
                 </ul>
                 <hr>
-                <div class="custom-control custom-switch">
-                    <label style="font-weight: bold;color: dodgerblue;margin-left: -30%">Responda:</label><br/>
-                    <input type="checkbox" class="custom-control-input" id="passo2_2">
-                    <label class="custom-control-label" for="passo2_2">SIM </label>
+                <div style="text-align: center">
+                    <label style="font-weight: bold;color: dodgerblue">Escolher :</label><br/>
+                    <button type="button" value="25" id="botao2" class="btn btn-primary" onclick="habilitar2();">X</button>      
                 </div>
             </div>
         </div>
@@ -345,10 +329,9 @@ $passo4 = '<!-- Primeira pergunta -->
                     <li></li>
                 </ul>
                 <hr>
-                <div class="custom-control custom-switch">
-                    <label style="font-weight: bold;color: dodgerblue;margin-left: -30%">Responda:</label><br/>
-                    <input type="checkbox" class="custom-control-input" id="passo2_3">
-                    <label class="custom-control-label" for="passo2_3">SIM </label>
+                <div style="text-align: center">
+                    <label style="font-weight: bold;color: dodgerblue">Escolher :</label><br/>
+                    <button type="button" value="50" id="botao3" class="btn btn-primary" onclick="habilitar3();">X</button>      
                 </div>
             </div>
         </div>
@@ -363,10 +346,9 @@ $passo4 = '<!-- Primeira pergunta -->
                     <li></li>
                 </ul>
                 <hr>
-                <div class="custom-control custom-switch">
-                    <label style="font-weight: bold;color: dodgerblue;margin-left: -30%">Responda:</label><br/>
-                    <input type="checkbox" class="custom-control-input" id="passo2_4">
-                    <label class="custom-control-label" for="passo2_4">SIM </label>
+                <div style="text-align: center">
+                    <label style="font-weight: bold;color: dodgerblue">Escolher :</label><br/>
+                    <button type="button" value="75" id="botao4" class="btn btn-primary" onclick="habilitar4();">X</button>      
                 </div>
             </div>
         </div>
@@ -382,10 +364,9 @@ $passo4 = '<!-- Primeira pergunta -->
                     <li></li>
                 </ul>
                 <hr>
-                <label style="font-weight: bold;color: dodgerblue;margin-left: -30%">Responda:</label><br/>
-                <div class="custom-control custom-switch">
-                    <input type="checkbox" class="custom-control-input" id="passo2_5">
-                    <label class="custom-control-label" for="passo2_5">SIM </label>
+                <div style="text-align: center">
+                    <label style="font-weight: bold;color: dodgerblue">Escolher :</label><br/>
+                    <button type="button" value="100" id="botao5" class="btn btn-primary" onclick="habilitar5();">X</button>      
                 </div>
             </div>
         </div>
@@ -405,10 +386,9 @@ $passo5 = '<!-- Primeira pergunta -->
                     <li></li>
                 </ul>
                 <hr>
-                <div class="custom-control custom-switch">
-                    <label style="font-weight: bold;color: dodgerblue;margin-left: -30%">Responda:</label><br/>
-                    <input type="checkbox" class="custom-control-input" id="passo2_1">
-                    <label class="custom-control-label" for="passo2_1">SIM </label>
+                <div style="text-align: center">
+                    <label style="font-weight: bold;color: dodgerblue">Escolher :</label><br/>
+                    <button type="button" value="0" id="botao1" class="btn btn-primary" onclick="habilitar1();">X</button>      
                 </div>
             </div>
         </div>
@@ -424,10 +404,9 @@ $passo5 = '<!-- Primeira pergunta -->
                     <li></li>
                 </ul>
                 <hr>
-                <div class="custom-control custom-switch">
-                    <label style="font-weight: bold;color: dodgerblue;margin-left: -30%">Responda:</label><br/>
-                    <input type="checkbox" class="custom-control-input" id="passo2_2">
-                    <label class="custom-control-label" for="passo2_2">SIM </label>
+                <div style="text-align: center">
+                    <label style="font-weight: bold;color: dodgerblue">Escolher :</label><br/>
+                    <button type="button" value="25" id="botao2" class="btn btn-primary" onclick="habilitar2();">X</button>      
                 </div>
             </div>
         </div>
@@ -443,10 +422,9 @@ $passo5 = '<!-- Primeira pergunta -->
                     <li></li>
                 </ul>
                 <hr>
-                <div class="custom-control custom-switch">
-                    <label style="font-weight: bold;color: dodgerblue;margin-left: -30%">Responda:</label><br/>
-                    <input type="checkbox" class="custom-control-input" id="passo2_3">
-                    <label class="custom-control-label" for="passo2_3">SIM </label>
+                <div style="text-align: center">
+                    <label style="font-weight: bold;color: dodgerblue">Escolher :</label><br/>
+                    <button type="button" value="50" id="botao3" class="btn btn-primary" onclick="habilitar3();">X</button>      
                 </div>
             </div>
         </div>
@@ -462,10 +440,9 @@ $passo5 = '<!-- Primeira pergunta -->
                     <li></li>
                 </ul>
                 <hr>
-                <div class="custom-control custom-switch">
-                    <label style="font-weight: bold;color: dodgerblue;margin-left: -30%">Responda:</label><br/>
-                    <input type="checkbox" class="custom-control-input" id="passo2_4">
-                    <label class="custom-control-label" for="passo2_4">SIM </label>
+                <div style="text-align: center">
+                    <label style="font-weight: bold;color: dodgerblue">Escolher :</label><br/>
+                    <button type="button" value="75" id="botao4" class="btn btn-primary" onclick="habilitar4();">X</button>      
                 </div>
             </div>
         </div>
@@ -481,10 +458,9 @@ $passo5 = '<!-- Primeira pergunta -->
                     <li></li>
                 </ul>
                 <hr>
-                <label style="font-weight: bold;color: dodgerblue;margin-left: -30%">Responda:</label><br/>
-                <div class="custom-control custom-switch">
-                    <input type="checkbox" class="custom-control-input" id="passo2_5">
-                    <label class="custom-control-label" for="passo2_5">SIM </label>
+                <div style="text-align: center">
+                    <label style="font-weight: bold;color: dodgerblue">Escolher :</label><br/>
+                    <button type="button" value="100" id="botao5" class="btn btn-primary" onclick="habilitar5();">X</button>      
                 </div>
             </div>
         </div>
@@ -504,10 +480,9 @@ $passo6 = '<!-- Primeira pergunta -->
                     <li></li>
                 </ul>
                 <hr>
-                <div class="custom-control custom-switch">
-                    <label style="font-weight: bold;color: dodgerblue;margin-left: -30%">Responda:</label><br/>
-                    <input type="checkbox" class="custom-control-input" id="passo2_1">
-                    <label class="custom-control-label" for="passo2_1">SIM </label>
+                <div style="text-align: center">
+                    <label style="font-weight: bold;color: dodgerblue">Escolher :</label><br/>
+                    <button type="button" value="0" id="botao1" class="btn btn-primary" onclick="habilitar1();">X</button>      
                 </div>
             </div>
         </div>
@@ -523,10 +498,9 @@ $passo6 = '<!-- Primeira pergunta -->
                     <li></li>
                 </ul>
                 <hr>
-                <div class="custom-control custom-switch">
-                    <label style="font-weight: bold;color: dodgerblue;margin-left: -30%">Responda:</label><br/>
-                    <input type="checkbox" class="custom-control-input" id="passo2_2">
-                    <label class="custom-control-label" for="passo2_2">SIM </label>
+                <div style="text-align: center">
+                    <label style="font-weight: bold;color: dodgerblue">Escolher :</label><br/>
+                    <button type="button" value="25" id="botao2" class="btn btn-primary" onclick="habilitar2();">X</button>      
                 </div>
             </div>
         </div>
@@ -542,10 +516,9 @@ $passo6 = '<!-- Primeira pergunta -->
                     <li></li>
                 </ul>
                 <hr>
-                <div class="custom-control custom-switch">
-                    <label style="font-weight: bold;color: dodgerblue;margin-left: -30%">Responda:</label><br/>
-                    <input type="checkbox" class="custom-control-input" id="passo2_3">
-                    <label class="custom-control-label" for="passo2_3">SIM </label>
+                <div style="text-align: center">
+                    <label style="font-weight: bold;color: dodgerblue">Escolher :</label><br/>
+                    <button type="button" value="50" id="botao3" class="btn btn-primary" onclick="habilitar3();">X</button>      
                 </div>
             </div>
         </div>
@@ -560,10 +533,9 @@ $passo6 = '<!-- Primeira pergunta -->
                     <li></li>
                 </ul>
                 <hr>
-                <div class="custom-control custom-switch">
-                    <label style="font-weight: bold;color: dodgerblue;margin-left: -30%">Responda:</label><br/>
-                    <input type="checkbox" class="custom-control-input" id="passo2_4">
-                    <label class="custom-control-label" for="passo2_4">SIM </label>
+                <div style="text-align: center">
+                    <label style="font-weight: bold;color: dodgerblue">Escolher :</label><br/>
+                    <button type="button" value="75" id="botao4" class="btn btn-primary" onclick="habilitar4();">X</button>      
                 </div>
             </div>
         </div>
@@ -578,10 +550,9 @@ $passo6 = '<!-- Primeira pergunta -->
                     <li></li>
                 </ul>
                 <hr>
-                <label style="font-weight: bold;color: dodgerblue;margin-left: -30%">Responda:</label><br/>
-                <div class="custom-control custom-switch">
-                    <input type="checkbox" class="custom-control-input" id="passo2_5">
-                    <label class="custom-control-label" for="passo2_5">SIM </label>
+                <div style="text-align: center">
+                    <label style="font-weight: bold;color: dodgerblue">Escolher :</label><br/>
+                    <button type="button" value="100" id="botao5" class="btn btn-primary" onclick="habilitar5();">X</button>      
                 </div>
             </div>
         </div>
