@@ -33,5 +33,12 @@ class ClassCrud extends ClassConexao
         return $this->Crud;
     }
 
+    #Selecão no banco de dados
+    public function selectDBPerguntas($Campos, $Tabela, $Condicao, $Parametros)
+    {
+        $this->preparedStatements("SELECT {$Campos} FROM {$Tabela} {$Condicao}", $Parametros);
+        return $this->Crud;
+    }
+
 }
 

@@ -15,7 +15,7 @@ $paginaLocal = ' | Inicio - Informações da pesquisa';
 <body class="text-center">
 <!-- Perguntas -->
 <div class="container-fluid center">
-    <form class="form-signin" name="FormCadastro" id="FormCadastro" method="POST"
+    <form class="form-signin" name="FormCadastro" id="FormCadastro" method="post"
           action="../../Controller/ControllerCadastro.php">
         <!-- Menu -->
         <i class="fas fa-industry" id="mobileResponsive"></i>

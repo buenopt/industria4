@@ -7,7 +7,7 @@ $passo1 = '<!-- Primeira pergunta -->
             <div class="card-body">
                 <img width="64" src="../_img/passo1_1.png" alt="Imagem passo 1 de 1">
                 <p></p>
-                <p class="card-title pricing-card-title" style="font-weight: bold; font-size: 0.9em">Processamento de
+                <p class="card-title pricing-card-title" id="pergunta1_1" name="pergunta1_1" style="font-weight: bold; font-size: 0.9em">Processamento de
                     dados</p>
                 <ul class="list-unstyled mt-3 mb-4">
                     <li style="font-size: 0.7em;text-align: justify "></li>
@@ -15,7 +15,7 @@ $passo1 = '<!-- Primeira pergunta -->
                 <hr>
                 <div style="text-align: center">
                     <label style="font-weight: bold;color: dodgerblue">Escolher :</label><br/>
-                    <button type="button" value="0" id="botao1" class="btn btn-primary" onclick="habilitar1();">X</button>      
+                    <button type="button" value="0" id="botao1" name="resposta1_1" class="btn btn-primary" onclick="habilitar1();">X</button>      
                 </div>
             </div>
         </div>       

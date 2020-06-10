@@ -18,7 +18,6 @@ echo $menuPrincipal;
 ?>
 <!-- Menu principal -->
 <!-- Menu box -->
-<div id="Resultado" name="Resultado"></div>
 <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
     <h3 style="font-size: 1.4em; font-weight: bold; color: dodgerblue" class="display-4">Etapa 1 - Processamento de
         dados na

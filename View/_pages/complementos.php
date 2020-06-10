@@ -1,5 +1,5 @@
 <?php
-$versao = '<small style="font-size: 0.7em; font-style: italic">(versão 0.8)</small>';
+$versao = '<small style="font-size: 0.7em; font-style: italic">(versão 0.12)</small>';
 
 $headPassos = '<meta charset="UTF-8">
      <link rel="canonical" href="https://nuvem-d.com.br/industria4">
@@ -9,7 +9,17 @@ $headPassos = '<meta charset="UTF-8">
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../_css/styles.css" type="text/css">
     <!--   <link href="_css/pricing.css" rel="stylesheet"> -->
-    <link rel="icon" href="../_img/favicon.svg" type="image/svg+xml">';
+    <link rel="icon" href="../_img/favicon.svg" type="image/svg+xml">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-168872435-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag(\'js\', new Date());
+
+  gtag(\'config\', \'UA-168872435-1\');
+</script>
+';
 
 $menuPrincipal = '
 <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">

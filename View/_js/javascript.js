@@ -14,6 +14,7 @@ $("FormCadastro").on('submit', function (event) {
     })
 });
 
+//Botão de ativação e desativação de escolha
 function habilitar1() {
     $("#botao2,#botao3,#botao4,#botao5").attr("disabled", true);
 }
