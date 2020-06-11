@@ -44,8 +44,9 @@ echo $passo1;
 <!-- Botão continuar -->
 <div style="text-align: center">
     <input style="color: white" class="btn btn-info" type="button" value="Limpar" onclick="limpar()">
-    <a class="btn btn-success" href="passo2.php">Continuar <i class="fas fa-forward"></i></a>
+    <input class="btn btn-success" type="submit" value="Continuar"/>
 </div>
+</form>
 <div style="margin-top: 1em"></div>
 <!-- Botão continuar -->
 <!-- Fim modal ajuda -->

@@ -1,18 +1,20 @@
 //Validar e exibir resultado
-$("FormCadastro").on('submit', function (event) {
-    event.preventDefault();
-    var Dados = $(this).serialize();
+function resultado() {
+    $("FormCadastro").on('submit', function (event) {
+        event.preventDefault();
+        var Dados = $(this).serialize();
 
-    $.ajax({
-        url: '../_pages/passo1.php',
-        type: 'POST',
-        dataType: 'html',
-        data: Dados,
-        success: function (Dados) {
-            $('.Resultado').show().html(Dados);
-        }
-    })
-});
+        $.ajax({
+            url: '../_pages/passo1.php',
+            type: 'POST',
+            dataType: 'html',
+            data: Dados,
+            success: function (Dados) {
+                $('.Resultado').show().html(Dados);
+            }
+        })
+    });
+}
 
 //Botão de ativação e desativação de escolha
 function habilitar1() {

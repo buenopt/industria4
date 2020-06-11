@@ -33,6 +33,12 @@ class ClassCrud extends ClassConexao
         return $this->Crud;
     }
 
+    public function insertDBRespostas($Tabela, $Condicao, $Parametros)
+    {
+        $this->preparedStatements("INSERT INTO {$Tabela} VALUES ({$Condicao})", $Parametros);
+        return $this->Crud;
+    }
+
     #Selecão no banco de dados
     public function selectDBPerguntas($Campos, $Tabela, $Condicao, $Parametros)
     {

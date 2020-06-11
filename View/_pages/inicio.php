@@ -102,8 +102,7 @@ $paginaLocal = ' | Inicio - Informações da pesquisa';
         </div>
         <!-- Option sobre faturamento -->
         <p></p>
-        <input class="btn btn-lg btn-primary btn-block" type="submit" title="Acesso a aplicação" value="Começar"
-               onclick="validarFormulario()">
+        <input class="btn btn-lg btn-primary btn-block" type="submit" title="Acesso a aplicação" value="Começar">
         <br/>
         <p style="font-size: 0.7em">Conheça nossa política de pesquisa | <a
                     title="Clique aqui e leia a carta de apresentação na integra" href="carta-apresentacao.php"

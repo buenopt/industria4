@@ -61,3 +61,16 @@ if (isset($_POST['fatEmpresa'])) {
 } else {
     $fkfatEmpresa = "";
 }
+
+# campo de respostas e os valores dos cliques
+if (isset($_POST['resposta1_1'])) {
+    $resposta1_1 = 0;
+} else if (isset($_POST['resposta1_2'])) {
+    $resposta1_2 = 25;
+} else if (isset($_POST['resposta1_3'])) {
+    $resposta1_3 = 50;
+} else if (isset($_POST['resposta1_4'])) {
+    $resposta1_4 = 75;
+} else if (isset($_POST['resposta1_5'])) {
+    $resposta1_5 = 100;
+}

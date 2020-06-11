@@ -2,7 +2,10 @@
 
 $passo1 = '<!-- Primeira pergunta -->
 <div class="container">
+<form class="form-signin" name="FormPasso1" id="FormPasso1" method="post"
+          action="../../Controller/ControllerPassos.php">
     <div class="card-deck mb-6 text-center">
+    
         <div class="card mb-4 shadow-sm">
             <div class="card-body">
                 <img width="64" src="../_img/passo1_1.png" alt="Imagem passo 1 de 1">
@@ -15,7 +18,7 @@ $passo1 = '<!-- Primeira pergunta -->
                 <hr>
                 <div style="text-align: center">
                     <label style="font-weight: bold;color: dodgerblue">Escolher :</label><br/>
-                    <button type="button" value="0" id="botao1" name="resposta1_1" class="btn btn-primary" onclick="habilitar1();">X</button>      
+                    <input type="button" value="X" id="botao1" name="resposta1_1" class="btn btn-primary" onclick="habilitar1();">
                 </div>
             </div>
         </div>       
@@ -33,7 +36,7 @@ $passo1 = '<!-- Primeira pergunta -->
                 <hr>
                 <div style="text-align: center">
                     <label style="font-weight: bold;color: dodgerblue">Escolher :</label><br/>
-                    <button type="button" value="25" id="botao2" class="btn btn-primary" onclick="habilitar2();">X</button>      
+                    <button type="submit" value="25" id="botao2" name="resposta1_2" class="btn btn-primary" onclick="habilitar2();">X</button>      
                 </div>
             </div>
         </div>
@@ -51,7 +54,7 @@ $passo1 = '<!-- Primeira pergunta -->
                 <hr>
                 <div style="text-align: center">
                     <label style="font-weight: bold;color: dodgerblue">Escolher :</label><br/>
-                    <button type="button" value="50" id="botao3" class="btn btn-primary" onclick="habilitar3();">X</button>      
+                    <button type="submit" value="50" id="botao3" name="resposta1_3" class="btn btn-primary" onclick="habilitar3();">X</button>      
                 </div>
             </div>
         </div>
@@ -69,7 +72,7 @@ $passo1 = '<!-- Primeira pergunta -->
                 <hr>
                 <div style="text-align: center">
                     <label style="font-weight: bold;color: dodgerblue">Escolher :</label><br/>
-                    <button type="button" value="75" id="botao4" class="btn btn-primary" onclick="habilitar4();">X</button>      
+                    <button type="submit" value="75" id="botao4" name="resposta1_4" class="btn btn-primary" onclick="habilitar4();">X</button>      
                 </div>
             </div>
         </div>
@@ -87,11 +90,13 @@ $passo1 = '<!-- Primeira pergunta -->
                 <hr>
                 <div style="text-align: center">
                     <label style="font-weight: bold;color: dodgerblue">Escolher :</label><br/>
-                    <button type="button" value="100" id="botao5" class="btn btn-primary" onclick="habilitar5();">X</button>      
+                    <button type="submit" value="100" id="botao5" name="resposta1_5" class="btn btn-primary" onclick="habilitar5();">X</button>      
                 </div>
-            </div>
-        </div>
+            </div>            
+        </div>        
     </div>    
+    
+    
     <!-- Quinta pergunta -->';
 
 $passo2 = '<!-- Primeira pergunta -->
