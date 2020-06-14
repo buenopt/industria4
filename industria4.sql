@@ -11,7 +11,7 @@
  Target Server Version : 50726
  File Encoding         : 65001
 
- Date: 14/06/2020 13:25:21
+ Date: 14/06/2020 16:04:24
 */
 
 SET NAMES utf8mb4;
@@ -216,7 +216,6 @@ CREATE TABLE `tbRespostas`
 (
     `idResposta`   int(11)      NOT NULL AUTO_INCREMENT,
     `fkIdPergunta` int(11) DEFAULT NULL,
-    `resposta`     int(3)  DEFAULT NULL,
     `fkIdEmpresa`  int(11) DEFAULT NULL,
     `dtResposta`   timestamp(6) NOT NULL ON UPDATE CURRENT_TIMESTAMP(6),
     PRIMARY KEY (`idResposta`),
