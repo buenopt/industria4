@@ -16,6 +16,14 @@ function resultado() {
     });
 }
 
+function habilitar(botao) {
+    for (var i = 1; i < 6; i++){
+        if (i !== botao){
+            $(document.getElementById("botao"+i)).attr("disabled", true);
+        }
+    }
+}
+
 //Botão de ativação e desativação de escolha
 function habilitar1() {
     $("#botao2,#botao3,#botao4,#botao5").attr("disabled", true);
