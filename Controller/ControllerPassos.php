@@ -2,8 +2,20 @@
 include('../Class/Variaveis.php');
 include('../Class/ClassCrud.php');
 $dataAtual = date('Y-m-d H:i:s');
+
 #Cadastro das informações das respostas
-echo "$resposta1_1 $resposta1_2 $resposta1_3 $resposta1_4 $resposta1_5";
+if (isset($_POST["resposta1_1"])) {
+    echo "0";
+} else if (isset($_POST["resposta1_2"])) {
+    echo "25";
+} else if (isset($_POST["resposta1_3"])) {
+    echo "50";
+} else if (isset($_POST["resposta1_4"])) {
+    echo "75";
+} else if (isset($_POST["resposta1_5"])) {
+    echo "100";
+}
+
 
 
 

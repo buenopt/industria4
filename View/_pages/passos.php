@@ -18,10 +18,10 @@ $passo1 = '<!-- Primeira pergunta -->
                 <hr>
                 <div style="text-align: center">
                     <label style="font-weight: bold;color: dodgerblue">Escolher :</label><br/>
-                    <input type="button" value="X" id="botao1" name="resposta1_1" class="btn btn-primary" onclick="habilitar1();">
+                    <input type="submit" value="X" id="botao1" name="resposta1_1" class="btn btn-primary" onclick="habilitar1();">
                 </div>
             </div>
-        </div>       
+        </div>               
         <!-- Primeira pergunta -->
         <!-- Segunda pergunta -->
         <div class="card mb-4 shadow-sm">
