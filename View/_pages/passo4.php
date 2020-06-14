@@ -17,32 +17,12 @@ $paginaLocal = ' | Etapa 4 - Infraestrutura de TIC na produção';
 echo $menuPrincipal;
 ?>
 <!-- Menu principal -->
-<!-- Menu box -->
-<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-    <h3 style="font-size: 1.4em; font-weight: bold; color: dodgerblue" class="display-4">Etapa 4 - Infraestrutura de TIC
-        na
-        produção</h3>
-    <p style="font-size: 0.9em; margin-right: 5%; margin-left: 5%" class="lead">A infraestrutura de tecnologias da
-        informação e telecomunicações na produção determina as possibilidades de implementar aplicações inovadoras e
-        melhorias potenciais para
-        e processos organizacionais. Além do uso da central servidores de dados, portais de comunicação baseados na Web
-        podem ser usados. Processos automatizados para troca de dados com parceiros externos da cadeia de valor, ou
-        melhor, da rede de valor representam etapas adicionais em direção a uma visão da Indústria 4.0. </p>
-    <p style="text-align: center; font-size: 0.9em">Etapa : <i class="fas fa-walking"></i>&nbsp;<i
-                class="fas fa-walking"></i>&nbsp;<i class="fas fa-walking"></i>&nbsp;<b style="color: dodgerblue"><i
-                    class="fas fa-walking"></i></b>&nbsp;<i
-                class="fas fa-walking"></i>&nbsp;<i class="fas fa-walking"></i></p>
-    <hr>
-    <p style="text-align: center; font-size: 0.9em; color: slategrey">Selecione abaixo o item que condiz com sua empresa
-        (Só é aceita uma opção) :</p>
-    <hr>
-</div>
-<!-- Menu box -->
-<!-- container de perguntas -->
+
+<!-- container do passo4 -->
 <?php
 echo $passo4;
 ?>
-<!-- container de perguntas -->
+<!-- container do passo4 -->
 <!-- Botão continuar -->
 <div style="text-align: center">
     <a class="btn btn-secondary" href="passo3.php"><i class="fas fa-backward"></i>

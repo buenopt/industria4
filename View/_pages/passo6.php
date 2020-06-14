@@ -17,30 +17,11 @@ $paginaLocal = ' | Etapa 6 - interfaces homem-máquina (IHC)';
 echo $menuPrincipal;
 ?>
 <!-- Menu principal -->
-<!-- Menu box -->
-<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-    <h3 style="font-size: 1.4em; font-weight: bold; color: dodgerblue" class="display-4">Etapa 6 - interfaces
-        homem-máquina (IHC)</h3>
-    <p style="font-size: 0.9em; margin-right: 5%; margin-left: 5%" class="lead">A tendência para bens produzidos
-        individualmente e continuamente lotes menores leva a uma crescente complexidade da produção processos. Atingir
-        maior eficiência com lotes pequenos é tornando-se assim um fator competitivo decisivo. Nesse sentido, uma
-        estrutura modular dos respectivos produtos ou o uso de dispositivos flexíveis instalações de produção com a
-        coordenação adequada na respectiva cadeia de valor pode abrir novos potenciais.</p>
-    <p style="text-align: center; font-size: 0.9em">Etapa : <i class="fas fa-walking"></i>&nbsp;<i
-                class="fas fa-walking"></i>&nbsp;<i class="fas fa-walking"></i>&nbsp;<i
-                class="fas fa-walking"></i>&nbsp;<i
-                class="fas fa-walking"></i>&nbsp;<b style="color: dodgerblue"><i class="fas fa-walking"></i></b></p>
-    <hr>
-    <p style="text-align: center; font-size: 0.9em; color: slategrey">Selecione abaixo o item que condiz com sua empresa
-        (Só é aceita uma opção) :</p>
-    <hr>
-</div>
-<!-- Menu box -->
-<!-- container de perguntas -->
+<!-- container do passo 6 -->
 <?php
 echo $passo6;
 ?>
-<!-- container de perguntas -->
+<!-- container do passo 6 -->
 <!-- Botão continuar -->
 <div style="text-align: center">
     <a class="btn btn-secondary" href="passo5.php"><i class="fas fa-backward"></i>

@@ -1,6 +1,26 @@
 <?php
 
-$passo1 = '<!-- Primeira pergunta -->
+$passo1 = '
+<!-- menu box -->
+<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+    <h3 style="font-size: 1.4em; font-weight: bold; color: dodgerblue" class="display-4">Etapa 1 - Processamento de
+        dados na
+        produção</h3>
+    <p style="font-size: 0.9em; margin-right: 5%; margin-left: 5%" class="lead">O processamento de dados para várias
+        aplicações é uma questão fundamenta
+        para aplicações Indústria 4.0 em produção. Processamento de dados em produção pode ser usado para documentação
+        simples, bem como para objetivos visando o monitoramento de processos, processos autônomos planejamento e
+        controle.</p>
+    <p style="text-align: center; font-size: 0.9em">Etapa : <b style="color: dodgerblue"><i class="fas fa-walking"></i></b>&nbsp;<i
+                class="fas fa-walking"></i>&nbsp;<i class="fas fa-walking"></i>&nbsp;<i class="fas fa-walking"></i>&nbsp;<i
+                class="fas fa-walking"></i>&nbsp;<i class="fas fa-walking"></i></p>
+    <hr>
+    <p style="text-align: center; font-size: 0.9em; color: slategrey">Selecione abaixo o item que condiz com sua empresa
+        (Só é aceita uma opção) :</p>
+    <hr>
+</div>
+<!-- menu box -->
+<!-- Primeira pergunta -->
 <div class="container">
 <form class="form-signin" name="FormPasso1" id="FormPasso1" method="post"
           action="../../Controller/ControllerPassos.php">
@@ -99,7 +119,29 @@ $passo1 = '<!-- Primeira pergunta -->
     
     <!-- Quinta pergunta -->';
 
-$passo2 = '<!-- Primeira pergunta -->
+$passo2 = '
+<!-- Menu box -->
+<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+    <h3 style="font-size: 1.4em; font-weight: bold; color: dodgerblue" class="display-4">Etapa 2 - Comunicação de
+        máquinas para
+        máquinas</h3>
+    <p style="font-size: 0.9em; margin-right: 5%; margin-left: 5%" class="lead">Interfaces para troca automatizada de
+        dados entre máquinas formam a base para inúmeras aplicações da Indústia 4.0. Campo interfaces de barramento bem
+        como interfaces industriais Ethernet e Web são aplicados no ambiente industrial. Interfaces da Web e aplicativos
+        com troca autônoma de informações (web Serviços) oferecem a vantagem de uma possível separação de informações e
+        localização.</p>
+    <p style="text-align: center; font-size: 0.9em">Etapa : <i class="fas fa-walking"></i>&nbsp;<b
+                style="color: dodgerblue"><i
+                    class="fas fa-walking"></i></b>&nbsp;<i class="fas fa-walking"></i>&nbsp;<i
+                class="fas fa-walking"></i>&nbsp;<i
+                class="fas fa-walking"></i>&nbsp;<i class="fas fa-walking"></i></p>
+    <hr>
+    <p style="text-align: center; font-size: 0.9em; color: slategrey">Selecione abaixo o item que condiz com sua empresa
+        (Só é aceita uma opção) :</p>
+    <hr>
+</div>
+<!-- Menu box -->
+<!-- Primeira pergunta -->
 <div class="container">
     <div class="card-deck mb-6 text-center">
         <div class="card mb-4 shadow-sm">
@@ -191,7 +233,26 @@ $passo2 = '<!-- Primeira pergunta -->
     </div>
     <!-- Quinta pergunta -->';
 
-$passo3 = '<!-- Primeira pergunta -->
+$passo3 = '<!-- Menu box -->
+<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+    <h3 style="font-size: 1.4em; font-weight: bold; color: dodgerblue" class="display-4">Etapa 3 - Produção conectada em
+        rede
+        com toda a empresa</h3>
+    <p style="font-size: 0.9em; margin-right: 5%; margin-left: 5%" class="lead">Uma melhoria da rede entre a produção e
+        os outros níveis da empresa abrem sinergias e evitam duplicação de trabalho. A rede entre produção e outros
+        departamentos facilita soluções unificadas de TI, fluxos de trabalho padronizados ou formatos de arquivo usados
+        de forma consistente a partir dos quais toda a empresa benefícios.</p>
+    <p style="text-align: center; font-size: 0.9em">Etapa : <i class="fas fa-walking"></i>&nbsp;<i
+                class="fas fa-walking"></i>&nbsp;<b style="color: dodgerblue"><i class="fas fa-walking"></i></b>&nbsp;<i
+                class="fas fa-walking"></i>&nbsp;<i
+                class="fas fa-walking"></i>&nbsp;<i class="fas fa-walking"></i></p>
+    <hr>
+    <p style="text-align: center; font-size: 0.9em; color: slategrey">Selecione abaixo o item que condiz com sua empresa
+        (Só é aceita uma opção) :</p>
+    <hr>
+</div>
+<!-- Menu box -->
+<!-- Primeira pergunta -->
 <div class="container">
     <div class="card-deck mb-6 text-center">
         <div class="card mb-4 shadow-sm">
@@ -285,7 +346,29 @@ $passo3 = '<!-- Primeira pergunta -->
     </div>
     <!-- Quinta pergunta -->';
 
-$passo4 = '<!-- Primeira pergunta -->
+$passo4 = '
+<!-- Menu box -->
+<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+    <h3 style="font-size: 1.4em; font-weight: bold; color: dodgerblue" class="display-4">Etapa 4 - Infraestrutura de TIC
+        na
+        produção</h3>
+    <p style="font-size: 0.9em; margin-right: 5%; margin-left: 5%" class="lead">A infraestrutura de tecnologias da
+        informação e telecomunicações na produção determina as possibilidades de implementar aplicações inovadoras e
+        melhorias potenciais para
+        e processos organizacionais. Além do uso da central servidores de dados, portais de comunicação baseados na Web
+        podem ser usados. Processos automatizados para troca de dados com parceiros externos da cadeia de valor, ou
+        melhor, da rede de valor representam etapas adicionais em direção a uma visão da Indústria 4.0. </p>
+    <p style="text-align: center; font-size: 0.9em">Etapa : <i class="fas fa-walking"></i>&nbsp;<i
+                class="fas fa-walking"></i>&nbsp;<i class="fas fa-walking"></i>&nbsp;<b style="color: dodgerblue"><i
+                    class="fas fa-walking"></i></b>&nbsp;<i
+                class="fas fa-walking"></i>&nbsp;<i class="fas fa-walking"></i></p>
+    <hr>
+    <p style="text-align: center; font-size: 0.9em; color: slategrey">Selecione abaixo o item que condiz com sua empresa
+        (Só é aceita uma opção) :</p>
+    <hr>
+</div>
+<!-- Menu box -->
+<!-- Primeira pergunta -->
 <div class="container">
     <div class="card-deck mb-6 text-center">
         <div class="card mb-4 shadow-sm">
@@ -378,7 +461,28 @@ $passo4 = '<!-- Primeira pergunta -->
     </div>
     <!-- Quinta pergunta -->';
 
-$passo5 = '<!-- Primeira pergunta -->
+$passo5 = '
+<!-- Menu box -->
+<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+    <h3 style="font-size: 1.4em; font-weight: bold; color: dodgerblue" class="display-4">Etapa 5 - Eficiência com
+        pequenos lotes </h3>
+    <p style="font-size: 0.9em; margin-right: 5%; margin-left: 5%" class="lead">Considerando a crescente complexidade
+        dos sistemas de produção, interfaces homem-máquina entram em foco. Na realidade industrial, o ponto de partida é
+        frequentemente representado por unidades de exibição locais que não possui conceitos operacionais amigáveis.
+        Novos conceitos operacionais tablets ou óculos de dados que convenientemente fornecer as informações corretas no
+        lugar certo são potencialmente promissores para simplificar o trabalho dos funcionários e aumentar a eficiência
+        da produção.</p>
+    <p style="text-align: center; font-size: 0.9em">Etapa : <i class="fas fa-walking"></i>&nbsp;<i
+                class="fas fa-walking"></i>&nbsp;<i class="fas fa-walking"></i>&nbsp;<i
+                class="fas fa-walking"></i>&nbsp;<b style="color: dodgerblue"><i
+                    class="fas fa-walking"></i></b>&nbsp;<i class="fas fa-walking"></i></p>
+    <hr>
+    <p style="text-align: center; font-size: 0.9em; color: slategrey">Selecione abaixo o item que condiz com sua empresa
+        (Só é aceita uma opção) :</p>
+    <hr>
+</div>
+<!-- Menu box -->
+<!-- Primeira pergunta -->
 <div class="container">
     <div class="card-deck mb-6 text-center">
         <div class="card mb-4 shadow-sm">
@@ -472,7 +576,27 @@ $passo5 = '<!-- Primeira pergunta -->
     </div>
     <!-- Quinta pergunta -->';
 
-$passo6 = '<!-- Primeira pergunta -->
+$passo6 = '
+<!-- Menu box -->
+<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+    <h3 style="font-size: 1.4em; font-weight: bold; color: dodgerblue" class="display-4">Etapa 6 - interfaces
+        homem-máquina (IHC)</h3>
+    <p style="font-size: 0.9em; margin-right: 5%; margin-left: 5%" class="lead">A tendência para bens produzidos
+        individualmente e continuamente lotes menores leva a uma crescente complexidade da produção processos. Atingir
+        maior eficiência com lotes pequenos é tornando-se assim um fator competitivo decisivo. Nesse sentido, uma
+        estrutura modular dos respectivos produtos ou o uso de dispositivos flexíveis instalações de produção com a
+        coordenação adequada na respectiva cadeia de valor pode abrir novos potenciais.</p>
+    <p style="text-align: center; font-size: 0.9em">Etapa : <i class="fas fa-walking"></i>&nbsp;<i
+                class="fas fa-walking"></i>&nbsp;<i class="fas fa-walking"></i>&nbsp;<i
+                class="fas fa-walking"></i>&nbsp;<i
+                class="fas fa-walking"></i>&nbsp;<b style="color: dodgerblue"><i class="fas fa-walking"></i></b></p>
+    <hr>
+    <p style="text-align: center; font-size: 0.9em; color: slategrey">Selecione abaixo o item que condiz com sua empresa
+        (Só é aceita uma opção) :</p>
+    <hr>
+</div>
+<!-- Menu box -->
+<!-- Primeira pergunta -->
 <div class="container">
     <div class="card-deck mb-6 text-center">
         <div class="card mb-4 shadow-sm">

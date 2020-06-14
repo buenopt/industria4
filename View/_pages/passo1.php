@@ -17,30 +17,12 @@ $paginaLocal = ' | Etapa 1 - Processamento de dados na produção';
 echo $menuPrincipal;
 ?>
 <!-- Menu principal -->
-<!-- Menu box -->
-<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-    <h3 style="font-size: 1.4em; font-weight: bold; color: dodgerblue" class="display-4">Etapa 1 - Processamento de
-        dados na
-        produção</h3>
-    <p style="font-size: 0.9em; margin-right: 5%; margin-left: 5%" class="lead">O processamento de dados para várias
-        aplicações é uma questão fundamenta
-        para aplicações Indústria 4.0 em produção. Processamento de dados em produção pode ser usado para documentação
-        simples, bem como para objetivos visando o monitoramento de processos, processos autônomos planejamento e
-        controle.</p>
-    <p style="text-align: center; font-size: 0.9em">Etapa : <b style="color: dodgerblue"><i class="fas fa-walking"></i></b>&nbsp;<i
-                class="fas fa-walking"></i>&nbsp;<i class="fas fa-walking"></i>&nbsp;<i class="fas fa-walking"></i>&nbsp;<i
-                class="fas fa-walking"></i>&nbsp;<i class="fas fa-walking"></i></p>
-    <hr>
-    <p style="text-align: center; font-size: 0.9em; color: slategrey">Selecione abaixo o item que condiz com sua empresa
-        (Só é aceita uma opção) :</p>
-    <hr>
-</div>
-<!-- Menu box -->
-<!-- container de perguntas -->
+
+<!-- container de passo1 -->
 <?php
 echo $passo1;
 ?>
-<!-- conainer de perguntas -->
+<!-- container de passo1 -->
 <!-- Botão continuar -->
 <div style="text-align: center">
     <input style="color: white" class="btn btn-info" type="button" value="Limpar" onclick="limpar()">

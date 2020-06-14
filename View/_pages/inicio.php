@@ -44,9 +44,6 @@ $paginaLocal = ' | Inicio - Informações da pesquisa';
                 <option value="10">Gestor Executivo</option>
                 <option value="11">Gestor Operacional</option>
             </select>
-        </div>
-
-
         <!-- Tipo de gestor -->
         <p></p>
         <!-- Segmento das empresas -->
