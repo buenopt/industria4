@@ -72,7 +72,8 @@ echo $menuPrincipal;
                 <div class="card-body">
                     <img width="64" src="../_img/passo1_2.png" alt="Imagem passo 1 de 2">
                     <p></p>
-                    <p class="card-title pricing-card-title" style="font-weight: bold">Armazenamento de dados por
+                    <p class="card-title pricing-card-title" id="pergunta1_2" style="font-weight: bold">Armazenamento de
+                        dados por
                         documentação</p>
                     <ul class="list-unstyled mt-3 mb-4">
                         <li></li>
@@ -92,7 +93,8 @@ echo $menuPrincipal;
                 <div class="card-body">
                     <img width="64" src="../_img/passo1_3.png" alt="Imagem passo 1 de 3">
                     <p></p>
-                    <p class="card-title pricing-card-title" style="font-weight: bold">Análise de dados por processo
+                    <p class="card-title pricing-card-title" id="pergunta1_3" style="font-weight: bold">Análise de dados
+                        por processo
                         de
                         monitoramento</p>
                     <ul class="list-unstyled mt-3 mb-4">
@@ -113,7 +115,8 @@ echo $menuPrincipal;
                 <div class="card-body">
                     <img width="64" src="../_img/passo1_4.png" alt="Imagem passo 1 de 4">
                     <p></p>
-                    <p class="card-title pricing-card-title" style="font-weight: bold">Avaliação para processo de
+                    <p class="card-title pricing-card-title" id="pergunta1_4" style="font-weight: bold">Avaliação para
+                        processo de
                         planejamento controle</p>
                     <ul class="list-unstyled mt-3 mb-4">
                         <li></li>
@@ -133,7 +136,8 @@ echo $menuPrincipal;
                 <div class="card-body">
                     <img width="64" src="../_img/passo1_5.png" alt="Imagem passo 1 de 5">
                     <p></p>
-                    <p class="card-title pricing-card-title" style="font-weight: bold">Planejamento e controle
+                    <p class="card-title pricing-card-title" id="pergunta1_5" style="font-weight: bold">Planejamento e
+                        controle
                         automático do
                         processo</p>
                     <ul class="list-unstyled mt-3 mb-4">
@@ -199,7 +203,8 @@ echo $menuPrincipal;
                     <div class="card-body">
                         <img width="64" src="../_img/passo2_1.png" alt="Imagem passo 2 de 1">
                         <p></p>
-                        <p class="card-title pricing-card-title" style="font-weight: bold">Sem comunicação</p>
+                        <p class="card-title pricing-card-title" id="pergunta2_1" style="font-weight: bold">Sem
+                            comunicação</p>
                         <ul class="list-unstyled mt-3 mb-4">
                             <li></li>
                         </ul>
@@ -219,7 +224,8 @@ echo $menuPrincipal;
                     <div class="card-body">
                         <img width="64" src="../_img/passo2_2.png" alt="Imagem passo 2 de 2">
                         <p></p>
-                        <p class="card-title pricing-card-title" style="font-weight: bold">Interfaces de barramento
+                        <p class="card-title pricing-card-title" id="pergunta2_2" style="font-weight: bold">Interfaces
+                            de barramento
                             de
                             campo</p>
                         <ul class="list-unstyled mt-3 mb-4">
@@ -240,7 +246,8 @@ echo $menuPrincipal;
                     <div class="card-body">
                         <img width="64" src="../_img/passo2_3.png" alt="Imagem passo 2 de 3">
                         <p></p>
-                        <p class='card-title pricing-card-title' style="font-weight: bold">Interfaces industriais
+                        <p class='card-title pricing-card-title' id="pergunta2_3" style="font-weight: bold">Interfaces
+                            industriais
                             conectadas a
                             ethernet</p>
                         <ul class="list-unstyled mt-3 mb-4">
@@ -261,7 +268,8 @@ echo $menuPrincipal;
                     <div class="card-body">
                         <img width="64" src="../_img/passo2_4.png" alt="Imagem passo 2 de 4">
                         <p></p>
-                        <p class="card-title pricing-card-title" style="font-weight: bold">Máquinas com a
+                        <p class="card-title pricing-card-title" id="pergunta2_4" style="font-weight: bold">Máquinas com
+                            a
                             Internet</p>
                         <ul class="list-unstyled mt-3 mb-4">
                             <li></li>
@@ -281,7 +289,8 @@ echo $menuPrincipal;
                     <div class="card-body">
                         <img width="64" src="../_img/passo2_5.png" alt="Imagem passo 2 de 5">
                         <p></p>
-                        <p class=" card-title pricing-card-title" style="font-weight: bold">Serviços WEB e máquinas
+                        <p class=" card-title pricing-card-title" id="pergunta2_5" style="font-weight: bold">Serviços
+                            WEB e máquinas
                             com
                             sofwares
                             M2M</p>
@@ -348,7 +357,8 @@ echo $menuPrincipal;
                     <div class="card-body">
                         <img width="64" src="../_img/passo3_1.png" alt="Imagem passo 3 de 1">
                         <p></p>
-                        <p class="card-title pricing-card-title" style="font-weight: bold">Nenhuma rede na produção
+                        <p class="card-title pricing-card-title" id="pergunta3_1" style="font-weight: bold">Nenhuma rede
+                            na produção
                             com
                             outras
                             unidades de negócios</p>
@@ -370,7 +380,8 @@ echo $menuPrincipal;
                     <div class="card-body">
                         <img width="64" src="../_img/passo3_2.png" alt="Imagem passo 3 de 2">
                         <p></p>
-                        <p class="card-title pricing-card-title" style="font-weight: bold">Troca de informações via
+                        <p class="card-title pricing-card-title" id="pergunta3_2" style="font-weight: bold">Troca de
+                            informações via
                             correio
                             e
                             telefone</p>
@@ -392,7 +403,8 @@ echo $menuPrincipal;
                     <div class="card-body">
                         <img width="64" src="../_img/passo3_3.png" alt="Imagem passo 3 de 3">
                         <p></p>
-                        <p class="card-title pricing-card-title" style="font-weight: bold">Portais baseados na
+                        <p class="card-title pricing-card-title" id="pergunta3_3" style="font-weight: bold">Portais
+                            baseados na
                             Internet
                             com
                             compartilhamento de dados</p>
@@ -414,7 +426,8 @@ echo $menuPrincipal;
                     <div class="card-body">
                         <img width="64" src="../_img/passo3_4.png" alt="Imagem passo 3 de 4">
                         <p></p>
-                        <p class=" card-title pricing-card-title" style="font-weight: bold">Formatos de dados
+                        <p class=" card-title pricing-card-title" id="pergunta3_4" style="font-weight: bold">Formatos de
+                            dados
                             uniformes
                             e
                             servidores de dados inter-divisionalmente ligados </p>
@@ -436,7 +449,8 @@ echo $menuPrincipal;
                     <div class="card-body">
                         <img width="64" src="../_img/passo3_5.png" alt="Imagem passo 3 de 5">
                         <p></p>
-                        <p class="card-title pricing-card-title" style="font-weight: bold">Soluções de TI
+                        <p class="card-title pricing-card-title" id="pergunta3_5" style="font-weight: bold">Soluções de
+                            TI
                             interdivisionais e
                             totalmente em rede</p>
                         <ul class="list-unstyled mt-3 mb-4">
@@ -504,7 +518,8 @@ echo $menuPrincipal;
                     <div class="card-body">
                         <img width="64" src="../_img/passo4_1.png" alt="Imagem passo 4 de 1">
                         <p></p>
-                        <p class="card-title pricing-card-title" style="font-weight: bold">Troca de informações via
+                        <p class="card-title pricing-card-title" id="pergunta4_1" style="font-weight: bold">Troca de
+                            informações via
                             correio
                             e
                             telefone</p>
@@ -526,7 +541,8 @@ echo $menuPrincipal;
                     <div class="card-body">
                         <img width="64" src="../_img/passo4_2.png" alt="Imagem passo 4 de 2">
                         <p></p>
-                        <p class="card-title pricing-card-title" style="font-weight: bold">Servidores de dados
+                        <p class="card-title pricing-card-title" id="pergunta4_2" style="font-weight: bold">Servidores
+                            de dados
                             centrais
                             em
                             produção</p>
@@ -549,7 +565,8 @@ echo $menuPrincipal;
                     <div class="card-body">
                         <img width="64" src="../_img/passo4_3.png" alt="Imagem passo 4 de 3">
                         <p></p>
-                        <p class="card-title pricing-card-title" style="font-weight: bold">Portais baseados na
+                        <p class="card-title pricing-card-title" id="pergunta4_3" style="font-weight: bold">Portais
+                            baseados na
                             Internet
                             com
                             compartilhamento de dados</p>
@@ -572,7 +589,8 @@ echo $menuPrincipal;
                     <div class="card-body">
                         <img width="64" src="../_img/passo4_4.png" alt="Imagem passo 4 de 4">
                         <p></p>
-                        <p class="card-title pricing-card-title" style="font-weight: bold">Troca automatizada de
+                        <p class="card-title pricing-card-title" id="pergunta4_4" style="font-weight: bold">Troca
+                            automatizada de
                             informações</p>
                         <ul class="list-unstyled mt-3 mb-4">
                             <li></li>
@@ -593,7 +611,8 @@ echo $menuPrincipal;
                     <div class="card-body">
                         <img width="64" src="../_img/passo4_5.png" alt="Imagem passo 4 de 5">
                         <p></p>
-                        <p class="card-title pricing-card-title" style="font-weight: bold">Fornecedores e clientes
+                        <p class="card-title pricing-card-title" id="pergunta4_5" style="font-weight: bold">Fornecedores
+                            e clientes
                             são
                             totalmente integrados ao design do processo</p>
                         <ul class="list-unstyled mt-3 mb-4">
@@ -659,7 +678,8 @@ echo $menuPrincipal;
                     <div class="card-body">
                         <img width="64" src="../_img/passo5_1.png" alt="Imagem passo 5 de 1">
                         <p></p>
-                        <p class="card-title pricing-card-title" style="font-weight: bold">Sistema de produção
+                        <p class="card-title pricing-card-title" id="pergunta5_1" style="font-weight: bold">Sistema de
+                            produção
                             rígida e
                             pequena
                             proporção de peças idênticas</p>
@@ -681,7 +701,8 @@ echo $menuPrincipal;
                     <div class="card-body">
                         <img width="64" src="../_img/passo5_2.png" alt="Imagem passo 5 de 2">
                         <p></p>
-                        <p class="card-title pricing-card-title" style="font-weight: bold">Uso de sistema de
+                        <p class="card-title pricing-card-title" id="pergunta5_2" style="font-weight: bold">Uso de
+                            sistema de
                             produção
                             flexível e
                             peças idênticas</p>
@@ -703,7 +724,8 @@ echo $menuPrincipal;
                     <div class="card-body">
                         <img width="64" src="../_img/passo5_3.png" alt="Imagem passo 5 de 3">
                         <p></p>
-                        <p class="card-title pricing-card-title" style="font-weight: bold">Sistema de produção
+                        <p class="card-title pricing-card-title" id="pergunta5_3" style="font-weight: bold">Sistema de
+                            produção
                             flexível
                             e
                             projetos modulares para os produtos</p>
@@ -725,7 +747,8 @@ echo $menuPrincipal;
                     <div class="card-body">
                         <img width="64" src="../_img/passo5_4.png" alt="Imagem passo 5 de 4">
                         <p></p>
-                        <p class="card-title pricing-card-title" style="font-weight: bold">Produção flexível
+                        <p class="card-title pricing-card-title" id="pergunta5_4" style="font-weight: bold">Produção
+                            flexível
                             orientada
                             por
                             componentes de produtos modulares dentro da empresa</p>
@@ -747,7 +770,8 @@ echo $menuPrincipal;
                     <div class="card-body">
                         <img width="64" src="../_img/passo5_5.png" alt="Imagem passo 5 de 5">
                         <p></p>
-                        <p class="card-title pricing-card-title" style="font-weight: bold">Produção modular
+                        <p class="card-title pricing-card-title" id="pergunta5_5" style="font-weight: bold">Produção
+                            modular
                             orientada
                             por
                             componentes em redes de valor agregado</p>
@@ -810,7 +834,8 @@ echo $menuPrincipal;
                     <div class="card-body">
                         <img width="64" src="../_img/passo6_1.png" alt="Imagem passo 6 de 1">
                         <p></p>
-                        <p class="card-title pricing-card-title" style="font-weight: bold">Nenhuma troca de
+                        <p class="card-title pricing-card-title" id="pergunta6_1" style="font-weight: bold">Nenhuma
+                            troca de
                             informações
                             entre
                             usuário e máquina</p>
@@ -832,7 +857,8 @@ echo $menuPrincipal;
                     <div class="card-body">
                         <img width="64" src="../_img/passo6_2.png" alt="Imagem passo 6 de 2">
                         <p></p>
-                        <p class="card-title pricing-card-title" style="font-weight: bold">Uso de interfaces de
+                        <p class="card-title pricing-card-title" id="pergunta6_2" style="font-weight: bold">Uso de
+                            interfaces de
                             usuário
                             locais
                         </p>
@@ -855,7 +881,8 @@ echo $menuPrincipal;
                     <div class="card-body">
                         <img width="64" src="../_img/passo6_3.png" alt="Imagem passo 6 de 3">
                         <p></p>
-                        <p class="card-title pricing-card-title" style="font-weight: bold">Monitoramento, controle
+                        <p class="card-title pricing-card-title" id="pergunta6_3" style="font-weight: bold">
+                            Monitoramento, controle
                             de
                             produção
                             centralizado e descentralizado</p>
@@ -878,7 +905,8 @@ echo $menuPrincipal;
                     <div class="card-body">
                         <img width="64" src="../_img/passo6_4.png" alt="Imagem passo 6 de 4">
                         <p></p>
-                        <p class="card-title pricing-card-title" style="font-weight: bold">Uso de interfaces
+                        <p class="card-title pricing-card-title" id="pergunta6_4" style="font-weight: bold">Uso de
+                            interfaces
                             móveis</p>
                         <ul class="list-unstyled mt-3 mb-4">
                             <li></li>
@@ -899,7 +927,8 @@ echo $menuPrincipal;
                     <div class="card-body">
                         <img width="64" src="../_img/passo6_5.png" alt="Imagem passo 6 de 5">
                         <p></p>
-                        <p class="card-title pricing-card-title" style="font-weight: bold">Realidade aumentada e
+                        <p class="card-title pricing-card-title" id="pergunta6_5" style="font-weight: bold">Realidade
+                            aumentada e
                             assistida</p>
                         <ul class="list-unstyled mt-3 mb-4">
                             <li></li>
@@ -926,6 +955,7 @@ echo $menuPrincipal;
         <!-- Botão continuar -->
     </div>
     <!-- Fim passo 6 -->
+    <!-- Inicio Resultado -->
     <div id="resultado" style="display: none">
         <main role="main" class="container">
             <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center" style="display: none"
@@ -1051,6 +1081,7 @@ echo $menuPrincipal;
                 <!-- botão imprimir -->
             </div>
     </div>
+    <!-- Fim Resultado -->
     <!-- Modal de ajuda -->
     <?php
     echo $modalAjuda;
