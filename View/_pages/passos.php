@@ -1045,17 +1045,12 @@ echo $menuPrincipal;
                 <!-- botão imprimir -->
             </div>
     </div>
-
-
     <!-- Modal de ajuda -->
     <?php
     echo $modalAjuda;
     ?>
     <!-- Fim modal ajuda -->
-
-
     <!-- Rodapé -->
-
     <?php
     echo $rodapePrincipal;
     ?>
