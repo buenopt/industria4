@@ -11,7 +11,7 @@
  Target Server Version : 50726
  File Encoding         : 65001
 
- Date: 14/06/2020 16:04:24
+ Date: 20/06/2020 18:07:03
 */
 
 SET NAMES utf8mb4;
@@ -116,6 +116,7 @@ CREATE TABLE `tbEmpresas`
     CONSTRAINT `fkgestorEmpresa` FOREIGN KEY (`fkgestorEmpresa`) REFERENCES `tbCategorias` (`idCategorias`) ON DELETE NO ACTION ON UPDATE NO ACTION,
     CONSTRAINT `fksegEmpresa` FOREIGN KEY (`fksegEmpresa`) REFERENCES `tbCategorias` (`idCategorias`) ON DELETE NO ACTION ON UPDATE NO ACTION
 ) ENGINE = InnoDB
+  AUTO_INCREMENT = 2
   DEFAULT CHARSET = utf8
   COLLATE = utf8_bin;
 
@@ -123,6 +124,8 @@ CREATE TABLE `tbEmpresas`
 -- Records of tbEmpresas
 -- ----------------------------
 BEGIN;
+INSERT INTO `tbEmpresas`
+VALUES (1, 'Fernando', 'buenopt@hotmail.com', 10, 35, 50, 61, '2020-06-20 11:32:22.000000');
 COMMIT;
 
 -- ----------------------------
