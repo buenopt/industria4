@@ -7,7 +7,7 @@ $Crud = new ClassCrud();
 try {
     $Crud->insertDB("tbEmpresas", "?,?,?,?,?,?,?,?",
         array($idEmpresa, $nomeEmpresa, $emailEmpresa, $fkgestorEmpresa, $fksegEmpresa, $fkqtdeFuncEmpresa, $fkfatEmpresa, $dataAtual));
-    header('Location: ../View/_pages/passo1.php');
+    header('Location: ../View/_pages/passos.php');
 } catch (Exception $erroInsertBD) {
     echo $erroInsertBD->getMessage() . ' <<<=== Erro de inserção de dados no banco de dados';
 }

@@ -1,5 +1,5 @@
 <?php
-$versao = '<small style="font-size: 0.7em; font-style: italic">(versão 0.13)</small>';
+$versao = '<small style="font-size: 0.7em; font-style: italic">(versão 0.15)</small>';
 
 $headPassos = '<meta charset="UTF-8">
      <link rel="canonical" href="https://nuvem-d.com.br/industria4">
@@ -36,13 +36,14 @@ $menuPrincipal = '
     </div>
 </div>';
 
-$rodapePrincipal = '<footer class="pt-4 my-md-5 pt-md-5 border-top">
-    <div class="row">
+$rodapePrincipal = '
+<footer class="pt-4 my-md-4 pt-md-4 border-top">
+    <div style="width: 90%" class="row">
         <div class="col-12 col-md">
         </div>
         <img style="margin-left: 3%; margin-top: 1%" class="mb-2" src="../_img/richardsonluz.jpg" alt="Foto de Richarson K. Luz" title="Foto de Richarson K. Luz" width="100"
              height="100">
-        <div class="col-6 col-md">
+        <div class="col-5 col-md">
             <h5 style="font-size: 1em; "><u>Sobre o projeto</u></h5>
             <ol class="list-unstyled text-small">
                 <li><a class="text-muted" href="carta-apresentacao.php" title="Leia sobre a carta de apresentação" target="_blank">Carta de apresentação</a>
