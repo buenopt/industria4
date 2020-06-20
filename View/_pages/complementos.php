@@ -29,7 +29,7 @@ $menuPrincipal = '
         de mestrado |</label>
     <div style="margin-top: 0.4em"></div>
     <div class="form-check form-check-inline">
-        <button type="button" class="btn btn-info" data-toggle="modal" title="Precisando de ajuda ? Clique aqui !" data-target="#exampleModal">
+        <button type="button" class="btn btn-info" data-toggle="modal" title="Precisando de ajuda ? Clique aqui !" data-target="#modalAjuda">
             Ajuda
         </button>&nbsp;&nbsp;
         <a class="btn btn-danger" title="Voltar para o inicio da ferramenta" href="inicio.php" >Sair</a>
@@ -70,12 +70,12 @@ $scriptsFrame = '<script src="../_js/642bf06c9e.js"></script>
 <script src="../_js/javascript.js"></script>';
 
 $modalAjuda = '
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+<div class="modal fade" id="modalAjuda" tabindex="-1" role="dialog" aria-labelledby="modalAjuda"
      aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 style="text-align: center" class="modal-title" id="exampleModalLabel">Dúvidas no
+                <h5 style="text-align: center" class="modal-title" id="modalAjuda">Dúvidas no
                     preenchimento:</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
