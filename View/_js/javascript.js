@@ -16,84 +16,27 @@ function resultado() {
     });
 }
 
-function iniciarPasso1() {
-    $(document).ready(function () {
-        $("#etapa2,#etapa3,#etapa4,#etapa5,#etapa6").hide();
-        $("#etapa1").show();
-    });
+function hide(div) {
+    if (div < 6) {
+        $(document.getElementById("etapa" + div)).fadeOut();
+        $(document.getElementById("etapa" + (div + 1))).fadeIn();
+    } else if (div === 6) {
+        alert("Concluido!");
+    } else {
+        alert("Valor inválido!");
+    }
 }
 
-function ocultarP1() {
-    $(document).ready(function () {
-        $("#etapa1").hide();
-        $("#etapa2").show();
-    });
-}
-
-function ocultarP2() {
-    $(document).ready(function () {
-        $("#etapa2").hide();
-        $("#etapa3").show();
-    });
-}
-
-function ocultarP3() {
-    $(document).ready(function () {
-        $("#etapa3").hide();
-        $("#etapa4").show();
-    });
-}
-
-function ocultarP4() {
-    $(document).ready(function () {
-        $("#etapa4").hide();
-        $("#etapa5").show();
-    });
-}
-
-function ocultarP5() {
-    $(document).ready(function () {
-        $("#etapa5").hide();
-        $("#etapa6").show();
-    });
-}
-
-function ocultarP6() {
-    $(document).ready(function () {
-        $("#etapa6").hide();
-    });
-}
-
-
-function habilitar(botao) {
+function habilitar(passo, botao) {
     for (var i = 1; i < 6; i++) {
         if (i !== botao) {
-            $(document.getElementById("botao" + i)).attr("disabled", true);
+            $(document.getElementById("botao" + passo + "_" + i)).attr("disabled", true);
         }
     }
 }
 
-//Botão de ativação e desativação de escolha
-function habilitar1() {
-    $("#botao2,#botao3,#botao4,#botao5").attr("disabled", true);
-}
-
-function habilitar2() {
-    $("#botao1,#botao3,#botao4,#botao5").attr("disabled", true);
-}
-
-function habilitar3() {
-    $("#botao1,#botao2,#botao4,#botao5").attr("disabled", true);
-}
-
-function habilitar4() {
-    $("#botao1,#botao2,#botao3,#botao5").attr("disabled", true);
-}
-
-function habilitar5() {
-    $("#botao1,#botao2,#botao3,#botao4").attr("disabled", true);
-}
-
-function limpar() {
-    $("#botao1,#botao2,#botao2,#botao3,#botao4,#botao5").removeAttr("disabled");
+function limpar(passo) {
+    for (var i = 1; i < 6; i++) {
+        $(document.getElementById("botao" + passo + "_" + i)).attr("disabled", false);
+    }
 }
