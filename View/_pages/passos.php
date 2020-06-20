@@ -987,7 +987,8 @@ echo $menuPrincipal;
                     </svg>
                     <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
                         <strong class="d-block text-gray-dark">Etapa 1</strong>
-                        <answer1></answer1> | <a href="#">Editar resposta</a>
+                        <answer1></answer1>
+                        | <a href="#">Editar resposta</a>
                     </p>
                 </div>
 
@@ -1003,7 +1004,8 @@ echo $menuPrincipal;
                     </svg>
                     <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
                         <strong class="d-block text-gray-dark">Etapa 2</strong>
-                        <answer2></answer2> | <a href="#">Editar resposta</a>
+                        <answer2></answer2>
+                        | <a href="#">Editar resposta</a>
                     </p>
                 </div>
                 <!-- Etapa 2 -->
@@ -1018,7 +1020,8 @@ echo $menuPrincipal;
                     </svg>
                     <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
                         <strong class="d-block text-gray-dark">Etapa 3</strong>
-                        <answer3></answer3> | <a href="#">Editar resposta</a>
+                        <answer3></answer3>
+                        | <a href="#">Editar resposta</a>
                     </p>
                 </div>
                 <!-- Etapa 3 -->
@@ -1033,7 +1036,8 @@ echo $menuPrincipal;
                     </svg>
                     <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
                         <strong class="d-block text-gray-dark">Etapa 4</strong>
-                        <answer4></answer4> | <a href="#">Editar resposta</a>
+                        <answer4></answer4>
+                        | <a href="#">Editar resposta</a>
                     </p>
                 </div>
                 <!-- Etapa 4 -->
@@ -1048,7 +1052,8 @@ echo $menuPrincipal;
                     </svg>
                     <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
                         <strong class="d-block text-gray-dark">Etapa 5</strong>
-                        <answer5></answer5> | <a href="#">Editar resposta</a>
+                        <answer5></answer5>
+                        | <a href="#">Editar resposta</a>
                     </p>
                 </div>
                 <!-- Etapa 5 -->
@@ -1063,7 +1068,8 @@ echo $menuPrincipal;
                     </svg>
                     <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
                         <strong class="d-block text-gray-dark">Etapa 6</strong>
-                        <answer6></answer6> | <a href="#">Editar resposta</a>
+                        <answer6></answer6>
+                        | <a href="#">Editar resposta</a>
                     </p>
                 </div>
                 <!-- Etapa 6 -->

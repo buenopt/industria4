@@ -1,5 +1,5 @@
 <?php
-$versao = '<small style="font-size: 0.7em; font-style: italic; text-align: center">(versão 0.15)</small>';
+$versao = '<small style="font-size: 0.7em; font-style: italic; text-align: center">(versão 0.22)</small>';
 
 $headPassos = '<meta charset="UTF-8">
      <link rel="canonical" href="https://nuvem-d.com.br/industria4">
@@ -60,14 +60,7 @@ $rodapePrincipal = '
     <small style="text-align: center" class="d-block mb-3 text-muted" title="Nome do desenvolvedor desta ferramenta">&copy; 2020 | Richardson K. Luz</small>
     <p></p>
 </footer>
-
 ';
-
-$scriptsFrame = '<script src="../_js/642bf06c9e.js"></script>
-<script src="../_js/jquery-3.5.1.min.js"></script>
-<script src="../_js/popper.min.js"></script>
-<script src="../bootstrap/js/bootstrap.min.js"></script>
-<script src="../_js/javascript.js"></script>';
 
 $modalAjuda = '
 <div class="modal fade" id="modalAjuda" tabindex="-1" role="dialog" aria-labelledby="modalAjuda"
@@ -94,3 +87,9 @@ $modalAjuda = '
     </div>
 </div>
 ';
+
+$scriptsFrame = '<script src="../_js/642bf06c9e.js"></script>
+<script src="../_js/jquery-3.5.1.min.js"></script>
+<script src="../_js/popper.min.js"></script>
+<script src="../bootstrap/js/bootstrap.min.js"></script>
+<script src="../_js/javascript.js"></script>';
