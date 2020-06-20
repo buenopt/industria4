@@ -928,7 +928,8 @@ echo $menuPrincipal;
     <!-- Fim passo 6 -->
     <div id="resultado" style="display: none">
         <main role="main" class="container">
-            <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+            <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center" style="display: none"
+                 id="divPorcentagem">
                 <h3 style="font-size: 1.4em; font-weight: bold; color: dodgerblue" class="display-4">Obrigado! </h3>
                 <p style="font-size: 0.9em; margin-right: 5%; margin-left: 5%" class="lead">Após as seis etapas da
                     pesquisa com
@@ -1036,8 +1037,13 @@ echo $menuPrincipal;
                     </p>
                 </div>
                 <!-- Etapa 6 -->
+                <!-- botão concluir -->
+                <div style="text-align: center; margin-top: 3%" id="btnConcluir">
+                    <button class="btn btn-outline-success" type="button">Concluir</button>
+                </div>
+                <!-- botão concluir -->
                 <!-- botão imprimir -->
-                <div style="text-align: center; margin-top: 3%">
+                <div style="text-align: center; margin-top: 3%; display: none" id="btnImprimir">
                     <button class="btn btn-outline-success" type="button" value="imprimir" onclick="window.print()"><i
                                 class="fas fa-print"></i> Imprimir
                     </button>

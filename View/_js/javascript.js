@@ -16,12 +16,20 @@ function resultado() {
     });
 }
 
+respostas = {};
+
 function hide(div) {
     if (div < 6) {
         $(document.getElementById("etapa" + div)).fadeOut();
         $(document.getElementById("etapa" + (div + 1))).fadeIn();
     } else if (div === 6) {
-        alert("Concluido!");
+        $(document.getElementById("etapa" + div)).fadeOut();
+        $("#resultado").fadeIn();
+        for (var i = 1; i <= 6; i++) {
+            var button = $(document.getElementById("botao" + i + "_" + respostas["passo"+i]));
+           var teste = button.parent("p").text();
+           alert(teste);
+        }
     } else {
         alert("Valor inválido!");
     }
@@ -33,6 +41,7 @@ function habilitar(passo, botao) {
             $(document.getElementById("botao" + passo + "_" + i)).attr("disabled", true);
         }
     }
+    respostas["passo" + passo] = botao;
 }
 
 function limpar(passo) {
