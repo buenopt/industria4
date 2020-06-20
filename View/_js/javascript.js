@@ -16,10 +16,59 @@ function resultado() {
     });
 }
 
+function iniciarPasso1() {
+    $(document).ready(function () {
+        $("#etapa2,#etapa3,#etapa4,#etapa5,#etapa6").hide();
+        $("#etapa1").show();
+    });
+}
+
+function ocultarP1() {
+    $(document).ready(function () {
+        $("#etapa1").hide();
+        $("#etapa2").show();
+    });
+}
+
+function ocultarP2() {
+    $(document).ready(function () {
+        $("#etapa2").hide();
+        $("#etapa3").show();
+    });
+}
+
+function ocultarP3() {
+    $(document).ready(function () {
+        $("#etapa3").hide();
+        $("#etapa4").show();
+    });
+}
+
+function ocultarP4() {
+    $(document).ready(function () {
+        $("#etapa4").hide();
+        $("#etapa5").show();
+    });
+}
+
+function ocultarP5() {
+    $(document).ready(function () {
+        $("#etapa5").hide();
+        $("#etapa6").show();
+    });
+}
+
+function ocultarP6() {
+    $(document).ready(function () {
+        $("#etapa6").hide();
+    });
+}
+
+
 function habilitar(botao) {
-    for (var i = 1; i < 6; i++){
-        if (i !== botao){
-            $(document.getElementById("botao"+i)).attr("disabled", true);
+    for (var i = 1; i < 6; i++) {
+        if (i !== botao) {
+            $(document.getElementById("botao" + i)).attr("disabled", true);
         }
     }
 }
