@@ -26,9 +26,9 @@ function hide(div) {
         $(document.getElementById("etapa" + div)).fadeOut();
         $("#resultado").fadeIn();
         for (var i = 1; i <= 6; i++) {
-            var button = $(document.getElementById("botao" + i + "_" + respostas["passo"+i]));
-           var teste = button.parent("p").text();
-           alert(teste);
+            var button = $(document.getElementById("botao" + i + "_" + respostas["passo"+i])).val();
+            $(document.getElementsByTagName("answer"+i)).html(
+                $(document.getElementById("pergunta" + i + "_" + respostas["passo"+i])).text());
         }
     } else {
         alert("Valor inválido!");
