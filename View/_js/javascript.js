@@ -1,51 +1,65 @@
 //Validar e exibir resultado
 function resultado() {
-    $("FormCadastro").on('submit', function (event) {
-        event.preventDefault();
-        var Dados = $(this).serialize();
+    var total = 0;
+    for (var i = 1; i <= 6; i++) {
+        total += parseInt($(document.getElementById("botao" + i + "_" + respostas["passo" + i])).val());
+    }
+    $("#resultadoFinal").html(parseFloat(total / 6).toFixed(2) + "%");
+    $("#btnConcluir").fadeOut();
+    $("#divPorcentagem").fadeIn();
+    $("#btnImprimir").fadeIn();
+    $(".editar").fadeOut();
 
-        $.ajax({
-            url: '../_pages/passo1.php',
-            type: 'POST',
-            dataType: 'html',
-            data: Dados,
-            success: function (Dados) {
-                $('.Resultado').show().html(Dados);
-            }
-        })
-    });
+    //var Dados = respostas.serialize();
+    $.ajax({
+        url: '../../Controller/ControllerPassos.php',
+        type: 'POST',
+        dataType: 'Json',
+        data: respostas,
+        success: function (Dados) {
+        }
+    })
 }
 
 respostas = {};
 
-function hide(div) {
-    if (div < 6) {
-        $(document.getElementById("etapa" + div)).fadeOut();
-        $(document.getElementById("etapa" + (div + 1))).fadeIn();
-    } else if (div === 6) {
-        $(document.getElementById("etapa" + div)).fadeOut();
+function hide(passo) {
+    if (passo < 6 && Object.keys(respostas).length !== 12) {
+        $(document.getElementById("etapa" + passo)).fadeOut();
+        $(document.getElementById("etapa" + (passo + 1))).fadeIn();
+    } else if (passo === 6 || Object.keys(respostas).length === 12) {
+        $(document.getElementById("etapa" + passo)).fadeOut();
         $("#resultado").fadeIn();
         for (var i = 1; i <= 6; i++) {
-            var button = $(document.getElementById("botao" + i + "_" + respostas["passo"+i])).val();
-            $(document.getElementsByTagName("answer"+i)).html(
-                $(document.getElementById("pergunta" + i + "_" + respostas["passo"+i])).text());
+            $(document.getElementsByTagName("answer" + i)).html(
+                $(document.getElementById("pergunta" + i + "_" + respostas["passo" + i])).text());
         }
     } else {
         alert("Valor inválido!");
     }
 }
 
-function habilitar(passo, botao) {
+function habilitar(passo, botao, id) {
     for (var i = 1; i < 6; i++) {
         if (i !== botao) {
             $(document.getElementById("botao" + passo + "_" + i)).attr("disabled", true);
         }
     }
+    $(document.getElementById("continuar" + passo)).attr("disabled", false);
     respostas["passo" + passo] = botao;
+    respostas["passo" + passo + "_id"] = id;
+    console.log(respostas);
 }
 
 function limpar(passo) {
     for (var i = 1; i < 6; i++) {
         $(document.getElementById("botao" + passo + "_" + i)).attr("disabled", false);
     }
+    $(document.getElementById("continuar" + passo)).attr("disabled", true);
+}
+
+function edit(passo) {
+    limpar(passo);
+    $("#resultado").fadeOut();
+    $(document.getElementById("etapa" + passo)).fadeIn();
 }

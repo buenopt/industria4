@@ -5,8 +5,11 @@ $dataAtual = date('Y-m-d H:i:s');
 #Cadastro das informações da empresa
 $Crud = new ClassCrud();
 try {
-    $Crud->insertDB("tbEmpresas", "?,?,?,?,?,?,?,?",
-        array($idEmpresa, $nomeEmpresa, $emailEmpresa, $fkgestorEmpresa, $fksegEmpresa, $fkqtdeFuncEmpresa, $fkfatEmpresa, $dataAtual));
+    $values = "'" . $nomeEmpresa . "','" . $emailEmpresa . "','" . $fkgestorEmpresa . "','" . $fksegEmpresa . "','" . $fkqtdeFuncEmpresa . "','" . $fkfatEmpresa . "','" . $dataAtual . "'";
+    $parametros = ("`nomeEmpresa`, `emailEmpresa`, `fkgestorEmpresa`, `fksegEmpresa`, `fkqtdeFuncEmpresa`, `fkfatEmpresa`, `dtCadEmpresa`");
+    $idEmpresa = $Crud->insertDB("tbEmpresas", $parametros, $values);
+    session_start();
+    $_SESSION["idEmpresa"] = $idEmpresa;
     header('Location: ../View/_pages/passos.php');
 } catch (Exception $erroInsertBD) {
     echo $erroInsertBD->getMessage() . ' <<<=== Erro de inserção de dados no banco de dados';

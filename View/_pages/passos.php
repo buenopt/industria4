@@ -1,4 +1,5 @@
 <?php
+
 include_once('complementos.php');
 $paginaLocal = ' | Etapa 1 - Processamento de dados na produção';
 ?>
@@ -16,6 +17,7 @@ $paginaLocal = ' | Etapa 1 - Processamento de dados na produção';
 echo $menuPrincipal;
 ?>
 <div class="container"> <!-- Inicio div container -->
+
     <!-- Inicio passo 1 -->
     <div id="etapa1">
         <!-- Menu Principal -->
@@ -61,7 +63,7 @@ echo $menuPrincipal;
                     <div style="text-align: center">
                         <label style="font-weight: bold;color: dodgerblue">Escolher :</label><br/>
                         <button type="submit" value="0" id="botao1_1" name="resposta1_1" class="btn btn-primary"
-                                onclick="habilitar(1,1);">X
+                                onclick="habilitar(1,1,1);">X
                         </button>
                     </div>
                 </div>
@@ -82,7 +84,7 @@ echo $menuPrincipal;
                     <div style="text-align: center">
                         <label style="font-weight: bold;color: dodgerblue">Escolher :</label><br/>
                         <button type="submit" value="25" id="botao1_2" name="resposta1_2" class="btn btn-primary"
-                                onclick="habilitar(1,2);">X
+                                onclick="habilitar(1,2,2);">X
                         </button>
                     </div>
                 </div>
@@ -104,7 +106,7 @@ echo $menuPrincipal;
                     <div style="text-align: center">
                         <label style="font-weight: bold;color: dodgerblue">Escolher :</label><br/>
                         <button type="submit" value="50" id="botao1_3" name="resposta1_3" class="btn btn-primary"
-                                onclick="habilitar(1,3);">X
+                                onclick="habilitar(1,3,3);">X
                         </button>
                     </div>
                 </div>
@@ -125,7 +127,7 @@ echo $menuPrincipal;
                     <div style="text-align: center">
                         <label style="font-weight: bold;color: dodgerblue">Escolher :</label><br/>
                         <button type="submit" value="75" id="botao1_4" name="resposta1_4" class="btn btn-primary"
-                                onclick="habilitar(1,4);">X
+                                onclick="habilitar(1,4,4);">X
                         </button>
                     </div>
                 </div>
@@ -147,7 +149,7 @@ echo $menuPrincipal;
                     <div style="text-align: center">
                         <label style="font-weight: bold;color: dodgerblue">Escolher :</label><br/>
                         <button type="submit" value="100" id="botao1_5" name="resposta1_5" class="btn btn-primary"
-                                onclick="habilitar(1,5);">X
+                                onclick="habilitar(1,5,5);">X
                         </button>
                     </div>
                 </div>
@@ -157,7 +159,7 @@ echo $menuPrincipal;
         <!-- Botão continuar -->
         <div style="text-align: center">
             <input style="color: white" class="btn btn-info" type="button" value="Limpar" onclick="limpar(1)">
-            <input class="btn btn-success" type="button" value="Continuar" onclick="hide(1);"/>
+            <input class="btn btn-success" type="button" value="Continuar" onclick="hide(1);" id="continuar1" disabled/>
         </div>
         <div style="margin-top: 1em"></div>
         <!-- Botão continuar -->
@@ -212,7 +214,7 @@ echo $menuPrincipal;
                         <div style="text-align: center">
                             <label style="font-weight: bold;color: dodgerblue">Escolher :</label><br/>
                             <button type="button" value="0" id="botao2_1" class="btn btn-primary"
-                                    onclick="habilitar(2,1);">
+                                    onclick="habilitar(2,1,6);">
                                 X
                             </button>
                         </div>
@@ -235,7 +237,7 @@ echo $menuPrincipal;
                         <div style="text-align: center">
                             <label style="font-weight: bold;color: dodgerblue">Escolher :</label><br/>
                             <button type="button" value="25" id="botao2_2" class="btn btn-primary"
-                                    onclick="habilitar(2,2);">X
+                                    onclick="habilitar(2,2,7);">X
                             </button>
                         </div>
                     </div>
@@ -257,7 +259,7 @@ echo $menuPrincipal;
                         <div style="text-align: center">
                             <label style="font-weight: bold;color: dodgerblue">Escolher :</label><br/>
                             <button type="button" value="50" id="botao2_3" class="btn btn-primary"
-                                    onclick="habilitar(2,3);">X
+                                    onclick="habilitar(2,3,8);">X
                             </button>
                         </div>
                     </div>
@@ -278,7 +280,7 @@ echo $menuPrincipal;
                         <div style="text-align: center">
                             <label style="font-weight: bold;color: dodgerblue">Escolher :</label><br/>
                             <button type="button" value="75" id="botao2_4" class="btn btn-primary"
-                                    onclick="habilitar(2,4);">X
+                                    onclick="habilitar(2,4,9);">X
                             </button>
                         </div>
                     </div>
@@ -302,7 +304,7 @@ echo $menuPrincipal;
                         <div style="text-align: center">
                             <label style="font-weight: bold;color: dodgerblue">Escolher :</label><br/>
                             <button type="button" value="100" id="botao2_5" class="btn btn-primary"
-                                    onclick="habilitar(2,5);">X
+                                    onclick="habilitar(2,5,10);">X
                             </button>
                         </div>
                     </div>
@@ -314,7 +316,7 @@ echo $menuPrincipal;
         <div style="text-align: center">
             <input style="color: white" class="btn btn-info" type="button" value="Limpar"
                    onclick="limpar(2)">
-            <input class="btn btn-success" type="button" value="Continuar" onclick="hide(2)"/>
+            <input class="btn btn-success" type="button" value="Continuar" onclick="hide(2)" id="continuar2" disabled/>
         </div>
 
         <div style="margin-top: 1em"></div>
@@ -369,7 +371,7 @@ echo $menuPrincipal;
                         <div style="text-align: center">
                             <label style="font-weight: bold;color: dodgerblue">Escolher :</label><br/>
                             <button type="button" value="0" id="botao3_1" class="btn btn-primary"
-                                    onclick="habilitar(3,1);">X
+                                    onclick="habilitar(3,1,11);">X
                             </button>
                         </div>
                     </div>
@@ -392,7 +394,7 @@ echo $menuPrincipal;
                         <div style="text-align: center">
                             <label style="font-weight: bold;color: dodgerblue">Escolher :</label><br/>
                             <button type="button" value="25" id="botao3_2" class="btn btn-primary"
-                                    onclick="habilitar(3,2);">X
+                                    onclick="habilitar(3,2,12);">X
                             </button>
                         </div>
                     </div>
@@ -415,7 +417,7 @@ echo $menuPrincipal;
                         <div style="text-align: center">
                             <label style="font-weight: bold;color: dodgerblue">Escolher :</label><br/>
                             <button type="button" value="50" id="botao3_3" class="btn btn-primary"
-                                    onclick="habilitar(3,3);">X
+                                    onclick="habilitar(3,3,13);">X
                             </button>
                         </div>
                     </div>
@@ -438,7 +440,7 @@ echo $menuPrincipal;
                         <div style="text-align: center">
                             <label style="font-weight: bold;color: dodgerblue">Escolher :</label><br/>
                             <button type="button" value="75" id="botao3_4" class="btn btn-primary"
-                                    onclick="habilitar(3,4);">X
+                                    onclick="habilitar(3,4,14);">X
                             </button>
                         </div>
                     </div>
@@ -460,7 +462,7 @@ echo $menuPrincipal;
                         <div style="text-align: center">
                             <label style="font-weight: bold;color: dodgerblue">Escolher :</label><br/>
                             <button type="button" value="100" id="botao3_5" class="btn btn-primary"
-                                    onclick="habilitar(3,5);">X
+                                    onclick="habilitar(3,5,15);">X
                             </button>
                         </div>
                     </div>
@@ -471,7 +473,7 @@ echo $menuPrincipal;
         <!-- Botão continuar -->
         <div style="text-align: center">
             <input style="color: white" class="btn btn-info" type="button" value="Limpar" onclick="limpar(3)">
-            <input class="btn btn-success" type="button" id="passo3" value="Continuar" onclick="hide(3);"/>
+            <input class="btn btn-success" type="button" value="Continuar" onclick="hide(3);" id="continuar3" disabled/>
         </div>
         <div style="margin-top: 1em"></div>
         <!-- Botão continuar -->
@@ -530,7 +532,7 @@ echo $menuPrincipal;
                         <div style="text-align: center">
                             <label style="font-weight: bold;color: dodgerblue">Escolher :</label><br/>
                             <button type="button" value="0" id="botao4_1" class="btn btn-primary"
-                                    onclick="habilitar(4,1);">X
+                                    onclick="habilitar(4,1,16);">X
                             </button>
                         </div>
                     </div>
@@ -553,7 +555,7 @@ echo $menuPrincipal;
                         <div style="text-align: center">
                             <label style="font-weight: bold;color: dodgerblue">Escolher :</label><br/>
                             <button type="button" value="25" id="botao4_2" class="btn btn-primary"
-                                    onclick="habilitar(4,2);">
+                                    onclick="habilitar(4,2,17);">
                                 X
                             </button>
                         </div>
@@ -577,7 +579,7 @@ echo $menuPrincipal;
                         <div style="text-align: center">
                             <label style="font-weight: bold;color: dodgerblue">Escolher :</label><br/>
                             <button type="button" value="50" id="botao4_3" class="btn btn-primary"
-                                    onclick="habilitar(4,3);">
+                                    onclick="habilitar(4,3,18);">
                                 X
                             </button>
                         </div>
@@ -599,7 +601,7 @@ echo $menuPrincipal;
                         <div style="text-align: center">
                             <label style="font-weight: bold;color: dodgerblue">Escolher :</label><br/>
                             <button type="button" value="75" id="botao4_4" class="btn btn-primary"
-                                    onclick="habilitar(4,4);">
+                                    onclick="habilitar(4,4,19);">
                                 X
                             </button>
                         </div>
@@ -622,7 +624,7 @@ echo $menuPrincipal;
                         <div style="text-align: center">
                             <label style="font-weight: bold;color: dodgerblue">Escolher :</label><br/>
                             <button type="button" value="100" id="botao4_5" class="btn btn-primary"
-                                    onclick="habilitar(4,5);">
+                                    onclick="habilitar(4,5,20);">
                                 X
                             </button>
                         </div>
@@ -634,7 +636,7 @@ echo $menuPrincipal;
         <!-- Botão continuar -->
         <div style="text-align: center">
             <input style="color: white" class="btn btn-info" type="button" value="Limpar" onclick="limpar(4)">
-            <input class="btn btn-success" value="Continuar" type="button" onclick="hide(4)">
+            <input class="btn btn-success" value="Continuar" type="button" onclick="hide(4)" id="continuar4" disabled>
         </div>
         <div style="margin-top: 1em"></div>
         <!-- Botão continuar -->
@@ -690,7 +692,7 @@ echo $menuPrincipal;
                         <div style="text-align: center">
                             <label style="font-weight: bold;color: dodgerblue">Escolher :</label><br/>
                             <button type="button" value="0" id="botao5_1" class="btn btn-primary"
-                                    onclick="habilitar(5,1);">X
+                                    onclick="habilitar(5,1,21);">X
                             </button>
                         </div>
                     </div>
@@ -713,7 +715,7 @@ echo $menuPrincipal;
                         <div style="text-align: center">
                             <label style="font-weight: bold;color: dodgerblue">Escolher :</label><br/>
                             <button type="button" value="25" id="botao5_2" class="btn btn-primary"
-                                    onclick="habilitar(5,2);">X
+                                    onclick="habilitar(5,2,22);">X
                             </button>
                         </div>
                     </div>
@@ -736,7 +738,7 @@ echo $menuPrincipal;
                         <div style="text-align: center">
                             <label style="font-weight: bold;color: dodgerblue">Escolher :</label><br/>
                             <button type="button" value="50" id="botao5_3" class="btn btn-primary"
-                                    onclick="habilitar(5,3);">X
+                                    onclick="habilitar(5,3,23);">X
                             </button>
                         </div>
                     </div>
@@ -759,7 +761,7 @@ echo $menuPrincipal;
                         <div style="text-align: center">
                             <label style="font-weight: bold;color: dodgerblue">Escolher :</label><br/>
                             <button type="button" value="75" id="botao5_4" class="btn btn-primary"
-                                    onclick="habilitar(5,4);">X
+                                    onclick="habilitar(5,4,24);">X
                             </button>
                         </div>
                     </div>
@@ -782,7 +784,7 @@ echo $menuPrincipal;
                         <div style="text-align: center">
                             <label style="font-weight: bold;color: dodgerblue">Escolher :</label><br/>
                             <button type="button" value="100" id="botao5_5" class="btn btn-primary"
-                                    onclick="habilitar(5,5);">X
+                                    onclick="habilitar(5,5,25);">X
                             </button>
                         </div>
                     </div>
@@ -793,7 +795,7 @@ echo $menuPrincipal;
         <!-- Botão continuar -->
         <div style="text-align: center">
             <input style="color: white" class="btn btn-info" type="button" value="Limpar" onclick="limpar(5)">
-            <input type="button" class="btn btn-success" value="Continuar" onclick="hide(5)">
+            <input type="button" class="btn btn-success" value="Continuar" onclick="hide(5)" id="continuar5" disabled>
         </div>
         <div style="margin-top: 1em"></div>
         <!-- Botão continuar -->
@@ -846,7 +848,7 @@ echo $menuPrincipal;
                         <div style="text-align: center">
                             <label style="font-weight: bold;color: dodgerblue">Escolher :</label><br/>
                             <button type="button" value="0" id="botao6_1" class="btn btn-primary"
-                                    onclick="habilitar(6,1);">X
+                                    onclick="habilitar(6,1,26);">X
                             </button>
                         </div>
                     </div>
@@ -869,7 +871,7 @@ echo $menuPrincipal;
                         <div style="text-align: center">
                             <label style="font-weight: bold;color: dodgerblue">Escolher :</label><br/>
                             <button type="button" value="25" id="botao6_2" class="btn btn-primary"
-                                    onclick="habilitar(6,2);">
+                                    onclick="habilitar(6,2,27);">
                                 X
                             </button>
                         </div>
@@ -893,7 +895,7 @@ echo $menuPrincipal;
                         <div style="text-align: center">
                             <label style="font-weight: bold;color: dodgerblue">Escolher :</label><br/>
                             <button type="button" value="50" id="botao6_3" class="btn btn-primary"
-                                    onclick="habilitar(6,3);">
+                                    onclick="habilitar(6,3,28);">
                                 X
                             </button>
                         </div>
@@ -915,7 +917,7 @@ echo $menuPrincipal;
                         <div style="text-align: center">
                             <label style="font-weight: bold;color: dodgerblue">Escolher :</label><br/>
                             <button type="button" value="75" id="botao6_4" class="btn btn-primary"
-                                    onclick="habilitar(6,4);">
+                                    onclick="habilitar(6,4,29);">
                                 X
                             </button>
                         </div>
@@ -937,7 +939,7 @@ echo $menuPrincipal;
                         <div style="text-align: center">
                             <label style="font-weight: bold;color: dodgerblue">Escolher :</label><br/>
                             <button type="button" value="100" id="botao6_5" class="btn btn-primary"
-                                    onclick="habilitar(6,5);">
+                                    onclick="habilitar(6,5,30);">
                                 X
                             </button>
                         </div>
@@ -949,7 +951,7 @@ echo $menuPrincipal;
         <!-- Botão continuar -->
         <div style="text-align: center">
             <input style="color: white" class="btn btn-info" type="button" value="Limpar" onclick="limpar(6)">
-            <input type="button" class="btn btn-success" value="Finalizar" onclick="hide(6)">
+            <input type="button" class="btn btn-success" value="Finalizar" onclick="hide(6)" id="continuar6" disabled>
         </div>
         <div style="margin-top: 1em"></div>
         <!-- Botão continuar -->
@@ -967,8 +969,8 @@ echo $menuPrincipal;
 
                 <hr>
                 <p style="text-align: center; font-size: 0.9em; color: slategrey">Sua indústria já esta :</p>
-                <h1 style="color: dodgerblue; font-size: 3em;font-family: 'Anton', sans-serif;" class="text-center">20
-                    %</h1>
+                <h1 style="color: dodgerblue; font-size: 3em;font-family: 'Anton', sans-serif;" class="text-center"
+                    id="resultadoFinal"></h1>
                 <p style="text-align: center; font-size: 0.9em; color: slategrey">No conceito indústria 4.0</p>
                 <hr>
             </div>
@@ -988,7 +990,7 @@ echo $menuPrincipal;
                     <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
                         <strong class="d-block text-gray-dark">Etapa 1</strong>
                         <answer1></answer1>
-                        | <a href="#">Editar resposta</a>
+                        <a class="editar" style="cursor: pointer;" onclick="edit(1)"> | Editar resposta</a>
                     </p>
                 </div>
 
@@ -1005,7 +1007,7 @@ echo $menuPrincipal;
                     <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
                         <strong class="d-block text-gray-dark">Etapa 2</strong>
                         <answer2></answer2>
-                        | <a href="#">Editar resposta</a>
+                        <a class="editar" style="cursor: pointer;" onclick="edit(2)"> | Editar resposta</a>
                     </p>
                 </div>
                 <!-- Etapa 2 -->
@@ -1021,7 +1023,7 @@ echo $menuPrincipal;
                     <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
                         <strong class="d-block text-gray-dark">Etapa 3</strong>
                         <answer3></answer3>
-                        | <a href="#">Editar resposta</a>
+                        <a class="editar" style="cursor: pointer;" onclick="edit(3)"> | Editar resposta</a>
                     </p>
                 </div>
                 <!-- Etapa 3 -->
@@ -1037,7 +1039,7 @@ echo $menuPrincipal;
                     <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
                         <strong class="d-block text-gray-dark">Etapa 4</strong>
                         <answer4></answer4>
-                        | <a href="#">Editar resposta</a>
+                        <a class="editar" style="cursor: pointer;" onclick="edit(4)"> | Editar resposta</a>
                     </p>
                 </div>
                 <!-- Etapa 4 -->
@@ -1053,7 +1055,7 @@ echo $menuPrincipal;
                     <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
                         <strong class="d-block text-gray-dark">Etapa 5</strong>
                         <answer5></answer5>
-                        | <a href="#">Editar resposta</a>
+                        <a class="editar" style="cursor: pointer;" onclick="edit(5)"> | Editar resposta</a>
                     </p>
                 </div>
                 <!-- Etapa 5 -->
@@ -1069,13 +1071,13 @@ echo $menuPrincipal;
                     <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
                         <strong class="d-block text-gray-dark">Etapa 6</strong>
                         <answer6></answer6>
-                        | <a href="#">Editar resposta</a>
+                        <a class="editar" style="cursor: pointer;" onclick="edit(6)"> | Editar resposta</a>
                     </p>
                 </div>
                 <!-- Etapa 6 -->
                 <!-- botão concluir -->
                 <div style="text-align: center; margin-top: 3%" id="btnConcluir">
-                    <button class="btn btn-outline-success" type="button">Concluir</button>
+                    <button class="btn btn-outline-success" type="button" onclick="resultado()">Concluir</button>
                 </div>
                 <!-- botão concluir -->
                 <!-- botão imprimir -->
