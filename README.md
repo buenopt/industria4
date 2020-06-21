@@ -7,4 +7,4 @@ LINHA DE PESQUISA: DESENVOLVIMENTO E CONTROLE DE PROCESSOS PRODUTIVOS
 
 MESTRANDO: RICHARDSON KENNEDY LUZ ORIENTADORA: PROFA. DRA. VALQUÍRIA MIWA HANAI YOSHIDA
 
-Desenvolvido por: Richardson K. Luz | Fernando A G Bueno | Samuel Furlan
+Desenvolvido por: Richardson K. Luz | Fernando A G Bueno | Samuel Furlan Rodrigues
