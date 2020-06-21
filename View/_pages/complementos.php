@@ -1,5 +1,5 @@
 <?php
-$versao = '<small style="font-size: 0.7em; font-style: italic; text-align: center">(versão 0.22)</small>';
+$versao = '<small style="font-size: 0.7em; font-style: italic; text-align: center">(versão 0.24 Beta)</small>';
 
 $headPassos = '<meta charset="UTF-8">
      <link rel="canonical" href="https://nuvem-d.com.br/industria4">
