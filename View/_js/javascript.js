@@ -23,6 +23,7 @@ function resultado() {
 
 respostas = {};
 
+//Função exibe e mostra div's conforme as etapas
 function hide(passo) {
     if (passo < 6 && Object.keys(respostas).length !== 12) {
         $(document.getElementById("etapa" + passo)).fadeOut();
@@ -39,6 +40,7 @@ function hide(passo) {
     }
 }
 
+//Função de botão, ao clicar sobre 1 botão os outros serão desativados
 function habilitar(passo, botao, id) {
     for (var i = 1; i < 6; i++) {
         if (i !== botao) {
@@ -51,6 +53,7 @@ function habilitar(passo, botao, id) {
     console.log(respostas);
 }
 
+//Função limpar botões da função disabled, deixando todos os botões habilitados novamente
 function limpar(passo) {
     for (var i = 1; i < 6; i++) {
         $(document.getElementById("botao" + passo + "_" + i)).attr("disabled", false);
@@ -58,6 +61,7 @@ function limpar(passo) {
     $(document.getElementById("continuar" + passo)).attr("disabled", true);
 }
 
+//Função editar respostas
 function edit(passo) {
     limpar(passo);
     $("#resultado").fadeOut();

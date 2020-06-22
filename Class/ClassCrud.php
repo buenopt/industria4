@@ -6,16 +6,15 @@ class ClassCrud extends ClassConexao
 
     public function insertDB($Tabela, $Parametros, $Values)
     {
-
-        $objDb = new ClassConexao();
-        $link = $objDb->conecta_mysql();
-
+        $Erro = "Falha ao inserir informações";
+        $objDb = $this->conectaDB();
         $query = "INSERT INTO {$Tabela}({$Parametros}) VALUES ({$Values})";
 
-        if (mysqli_query($link, $query)) {
-            return mysqli_insert_id($link);
+        if (mysqli_query($objDb, $query)) {
+            return mysqli_insert_id($objDb);
         } else {
-            var_dump(mysqli_error($link));
+            var_dump(mysqli_error($objDb));
+            return $Erro;
         }
     }
 }
