@@ -1,7 +1,7 @@
 <?php
-
+header("X-XSS-Protection: 1; mode=block");
 include_once('complementos.php');
-$paginaLocal = ' | Etapa 1 - Processamento de dados na produção';
+$paginaLocal = ' | Ferramenta de avaliação para Industria 4.0';
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">

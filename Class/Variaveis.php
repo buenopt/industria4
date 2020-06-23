@@ -1,5 +1,5 @@
 <?php
-
+header("X-XSS-Protection: 1; mode=block");
 #id da empresa
 if (isset($_POST['idEmpresa'])) {
     $idEmpresa = filter_input(INPUT_POST, 'idEmpresa', FILTER_SANITIZE_SPECIAL_CHARS);

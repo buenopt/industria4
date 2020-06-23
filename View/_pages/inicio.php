@@ -1,4 +1,5 @@
 <?php
+header("X-XSS-Protection: 1; mode=block");
 include_once('complementos.php');
 $paginaLocal = ' | Inicio - Informações da pesquisa';
 ?>

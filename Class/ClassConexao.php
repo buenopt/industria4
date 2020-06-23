@@ -1,4 +1,5 @@
 <?php
+header("X-XSS-Protection: 1; mode=block");
 date_default_timezone_set('America/Sao_Paulo');
 
 abstract class ClassConexao

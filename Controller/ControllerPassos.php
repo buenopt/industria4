@@ -1,4 +1,5 @@
 <?php
+header("X-XSS-Protection: 1; mode=block");
 include('../Class/Variaveis.php');
 include('../Class/ClassCrud.php');
 $dataAtual = date('Y-m-d H:i:s');

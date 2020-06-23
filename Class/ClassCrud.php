@@ -1,4 +1,5 @@
 <?php
+header("X-XSS-Protection: 1; mode=block");
 include('ClassConexao.php');
 
 class ClassCrud extends ClassConexao
