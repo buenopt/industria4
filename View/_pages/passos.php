@@ -990,10 +990,11 @@ echo $menuPrincipal;
                     <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
                         <strong class="d-block text-gray-dark">Etapa 1</strong>
                         <answer1></answer1>
-                        <a class="editar" style="cursor: pointer;" onclick="edit(1)"> | Editar resposta</a>
+                        <a class="editar"
+                           style="cursor: pointer;text-decoration:underline;color: #007bff; font-weight: bold"
+                           onclick="edit(1)"> | Editar resposta</a>
                     </p>
                 </div>
-
                 <!-- Etapa 1 -->
                 <!-- Etapa 2 -->
                 <div class="media text-muted pt-3">
@@ -1007,7 +1008,9 @@ echo $menuPrincipal;
                     <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
                         <strong class="d-block text-gray-dark">Etapa 2</strong>
                         <answer2></answer2>
-                        <a class="editar" style="cursor: pointer;" onclick="edit(2)"> | Editar resposta</a>
+                        <a class="editar"
+                           style="cursor: pointer;text-decoration:underline;color: #007bff; font-weight: bold"
+                           onclick="edit(2)"> | Editar resposta</a>
                     </p>
                 </div>
                 <!-- Etapa 2 -->
@@ -1023,7 +1026,9 @@ echo $menuPrincipal;
                     <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
                         <strong class="d-block text-gray-dark">Etapa 3</strong>
                         <answer3></answer3>
-                        <a class="editar" style="cursor: pointer;" onclick="edit(3)"> | Editar resposta</a>
+                        <a class="editar"
+                           style="cursor: pointer;text-decoration:underline;color: #007bff; font-weight: bold"
+                           onclick="edit(3)"> | Editar resposta</a>
                     </p>
                 </div>
                 <!-- Etapa 3 -->
@@ -1039,7 +1044,9 @@ echo $menuPrincipal;
                     <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
                         <strong class="d-block text-gray-dark">Etapa 4</strong>
                         <answer4></answer4>
-                        <a class="editar" style="cursor: pointer;" onclick="edit(4)"> | Editar resposta</a>
+                        <a class="editar"
+                           style="cursor: pointer;text-decoration:underline;color: #007bff; font-weight: bold"
+                           onclick="edit(4)"> | Editar resposta</a>
                     </p>
                 </div>
                 <!-- Etapa 4 -->
@@ -1055,7 +1062,9 @@ echo $menuPrincipal;
                     <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
                         <strong class="d-block text-gray-dark">Etapa 5</strong>
                         <answer5></answer5>
-                        <a class="editar" style="cursor: pointer;" onclick="edit(5)"> | Editar resposta</a>
+                        <a class="editar"
+                           style="cursor: pointer;text-decoration:underline;color: #007bff; font-weight: bold"
+                           onclick="edit(5)"> | Editar resposta</a>
                     </p>
                 </div>
                 <!-- Etapa 5 -->
@@ -1071,7 +1080,9 @@ echo $menuPrincipal;
                     <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
                         <strong class="d-block text-gray-dark">Etapa 6</strong>
                         <answer6></answer6>
-                        <a class="editar" style="cursor: pointer;" onclick="edit(6)"> | Editar resposta</a>
+                        <a class="editar"
+                           style="cursor: pointer;text-decoration:underline;color: #007bff; font-weight: bold"
+                           onclick="edit(6)"> | Editar resposta</a>
                     </p>
                 </div>
                 <!-- Etapa 6 -->
