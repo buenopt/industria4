@@ -6,7 +6,7 @@ $dataAtual = date('Y-m-d H:i:s');
 #Cadastro das informações da empresa
 $Crud = new ClassCrud();
 try {
-    $values = "'" . $nomeEmpresa . "','" . $emailEmpresa . "','" . $fkgestorEmpresa . "','" . $fksegEmpresa . "','" . $fkqtdeFuncEmpresa . "','" . $fkfatEmpresa . "','" . $dataAtual . "'";
+    $values = "'" . $nomeEmpresa . "','" . $emailEmpresa . "','" . $fkgestorEmpresa . "','" . $fksegEmpresa . "','" . $fkfatEmpresa . "','" . $dataAtual . "'";
     $parametros = ("`nomeEmpresa`, `emailEmpresa`, `fkgestorEmpresa`, `fksegEmpresa`, `fkqtdeFuncEmpresa`, `fkfatEmpresa`, `dtCadEmpresa`");
     $idEmpresa = $Crud->insertDB("tbempresas", $parametros, $values);
     session_start();
