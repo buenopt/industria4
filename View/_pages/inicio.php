@@ -44,6 +44,7 @@ $paginaLocal = ' | Inicio - Informações da pesquisa';
                 <option selected value="">Seu nível dentro da empresa</option>
                 <option value="10">Gestor Executivo</option>
                 <option value="11">Gestor Operacional</option>
+                <option value="12">Gestor Operacional</option>
             </select>
         <!-- Tipo de gestor -->
         <p></p>
@@ -52,41 +53,81 @@ $paginaLocal = ' | Inicio - Informações da pesquisa';
             <select id="segEmpresa" name="segEmpresa" class="form-control"
                     title="Insira o segmento de atividade da empresa" required>
                 <option selected value="">Qual o segmento da empresa</option>
-                <option value="20">Confecção de artigos do vestuário e acessórios</option>
-                <option value="21">Fabricação de produtos alimentícios</option>
-                <option value="22">Fabricação de bebidas</option>
-                <option value="23">Fabricação de produtos têxteis</option>
-                <option value="24">Fabricação de produtos de madeira</option>
-                <option value="25">Fabricação de celulose, papel e produtos de papel</option>
-                <option value="26">Fabricação de produtos derivados do petróleo</option>
-                <option value="27">Fabricação de biocombustíveis</option>
-                <option value="28">Fabricação de produtos químicos</option>
-                <option value="29">Fabricação de produtos farmoquímicos e farmacêuticos</option>
-                <option value="30">Fabricação de produtos de borracha e de material plástico</option>
-                <option value="31">Fabricação de produtos de minerais não metálicos</option>
-                <option value="32">Fabricação de produtos de metal, exceto máquinas e equipamentos</option>
-                <option value="33">Fabricação de equipamentos de informática, produtos eletrônicos e ópticos</option>
-                <option value="34">Fabricação de máquinas, aparelhos e materiais elétricos</option>
-                <option value="35">Fabricação de máquinas, aparelhos e materiais elétricos</option>
-                <option value="36">Fabricação de veículos automotores, reboques e carrocerias</option>
-                <option value="37">Fabricação de outros equipamentos de transporte, exceto veículos automotores</option>
-                <option value="38">Fabricação de móveis</option>
-                <option value="39">Fabricação de produtos diversos</option>
-                <option value="40">Manutenção, reparação e instalação de máquinas e equipamentos</option>
-                <option value="41">Metalurgia</option>
+                <option value="20">Abate De Aves</option>
+                <option value="21">Cultivo De Eucalipto</option>
+                <option value="22">Fabricacao De Aparelhos E Equipamentos De Medida, Teste E Controle</option>
+                <option value="23">Fabricacao De Aparelhos Eletromedicos E Eletroterapeuticos E Equipamentos De Irradiacao</option>
+                <option value="24">Fabricacao De Artefatos De Borracha Nao Especificados Anteriormente</option>
+                <option value="25">Fabricacao De Artefatos De Ceramica E Barro Cozido Para Uso Na Construcao,</option>
+                <option value="26">Fabricacao De Artefatos De Cimento Para Uso Na Construcao</option>
+                <option value="27">Fabricacao De Artefatos De Material Plastico </option>
+                <option value="28">Fabricacao De Artefatos De Material Plastico Para Uso Pessoal E Domestico</option>
+                <option value="29">Fabricacao De Artefatos De Material Plastico Para Usos Industriais</option>
+                <option value="30">Fabricacao De Artefatos Diversos De Madeira, Exceto Moveis</option>
+                <option value="31">Fabricacao De Artigos De Vidro</option>
+                <option value="32">Fabricacao De Automoveis, Camionetas E Utilitarios</option>
+                <option value="33">Fabricacao De Aviamentos Para Costura</option>
+                <option value="34">Fabricacao De Baterias E Acumuladores Para Veiculos Automotores</option>
+                <option value="35">Fabricacao De Cimento</option>
+                <option value="36">Fabricacao De Defensivos Agricolas</option>
+                <option value="37">Fabricacao De Embalagens De Material Plastico</option>
+                <option value="38">Fabricacao De Embalagens Metalicas</option>
+                <option value="39">Fabricacao De Ferramentas</option>
+                <option value="40">Fabricacao De Fios, Cabos E Condutores Eletricos Isolados</option>
+                <option value="41">Fabricacao De Geradores De Corrente Continua E Alternada, Pecas E Acessorios</option>
+                <option value="42">Fabricacao De Laminados Planos E Tubulares De Material Plastico</option>
+                <option value="43">Fabricacao De Maquinas E Equipamentos Para A Agricultura E Pecuaria, Pecas E Acessorios, Exceto Para Irrigacao</option>
+                <option value="44">Fabricacao De Maquinas E Equipamentos Para Terraplenagem, Pavimentacao E Construcao, Pecas E Acessorios, Exceto Tratores</option>
+                <option value="45">Fabricacao De Maquinas E Equipamentos Para Uso Industrial</option>
+                <option value="46">Fabricacao De Maquinas E Equipamentos Para Uso Industrial Especifico</option>
+                <option value="47">Fabricacao De Maquinas Para A Industria Metalurgica</option>
+                <option value="48">Fabricacao De Maquinas-Ferramenta, Pecas E Acessorios</option>
+                <option value="49">Fabricacao De Maquinas, Equipamentos E Aparelhos Para Transporte E Elevacao De Pessoas, Pecas E Acessorios</option>
+                <option value="50">Fabricacao De Materiais Para Medicina E Odontologia</option>
+                <option value="51">Fabricacao De Moveis Com Predominancia De Madeira</option>
+                <option value="52">Fabricacao De Obras De Caldeiraria Pesada</option>
+                <option value="53">Fabricacao De Outras Maquinas E Equipamentos De Uso Geral</option>
+                <option value="54">Fabricacao De Outras Maquinas E Equipamentos Para Uso Na Extracao Mineral</option>
+                <option value="55">Fabricacao De Outras Pecas E Acessorios Para Veiculos Automotores</option>
+                <option value="56">Fabricacao De Outras Pecas E Acessorios Para Veiculos Automotores Nao</option>
+                <option value="57">Fabricacao De Outros Artefatos E Produtos De Concreto, Cimento, Fibrocimento, Gesso E Materiais Semelhante</option>
+                <option value="58">Fabricacao De Outros Produtos Alimenticios Nao Especificados Anteriormente</option>
+                <option value="59">Fabricacao De Outros Produtos De Metal</option>
+                <option value="60">Fabricacao De Outros Produtos De Metal Nao Especificados Anteriormente</option>
+                <option value="61">Fabricacao De Outros Produtos De Minerais Nao-Metalicos</option>
+                <option value="62">Fabricacao De Outros Produtos Quimicos</option>
+                <option value="63">Fabricacao De Outros Produtos Quimicos Nao Especificados Anteriormente</option>
+                <option value="64">Fabricacao De Pecas E Acessorios Para O Sistema De Direcao E Suspensao De Veiculos Automotores</option>
+                <option value="65">Fabricacao De Perifericos Para Equipamentos De Informatica</option>
+                <option value="66">Fabricacao De Produtos De Pastas Celulosicas, Papel, Cartolina, Papel-Cartao E Papelao Ondulado Nao Especificados</option>
+                <option value="67">Fabricacao De Produtos De Trefilados De Metal</option>
+                <option value="68">Fabricacao De Refrigerantes</option>
+                <option value="69">Fabricacao De Tratores, Pecas E Acessorios, Exceto Agricolas</option>
+                <option value="70">Fundicao De Ferro E Aco</option>
+                <option value="71">Fundicao De Metais Nao-Ferrosos E Suas Ligas</option>
+                <option value="72">Metalurgia De Outros Metais Nao-Ferrosos E Suas Liga</option>
+                <option value="73">Preparacao E Fiacao De Fibras De Algodao</option>
+                <option value="74">Producao De Aluminio E Suas Ligas Em Formas Primarias</option>
+                <option value="75">Producao De Artefatos Estampados De Metal</option>
+                <option value="76">Producao De Forjados De Metais Nao-Ferrosos E Suas Ligas</option>
+                <option value="77">Producao De Laminados Longos De Aco, Exceto Tubos</option>
+                <option value="78">Producao De Tubos De Aco Com Costura</option>
+                <option value="79">Tecelagem De Fios De Fibras Artificiais E Sinteticas</option>
             </select>
         </div>
         <!-- Segmento das empresas -->
         <p></p>
         <!-- Qtde Funcionários -->
-        <div class="form-group">
+        <!--
+            <div class="form-group">
             <select id="qtdeFuncEmpresa" name="qtdeFuncEmpresa" class="form-control"
                     title="Insira a quantidade de funcionários entre as opções." required>
                 <option selected value="">Quantidade funcionários</option>
-                <option value="50">Entre 101 á 499 funcionários</option>
-                <option value="51">Acima 500 funcionários</option>
+                <option value="100">Entre 101 á 499 funcionários</option>
+                <option value="101">Acima 500 funcionários</option>
             </select>
         </div>
+        -->
         <!-- Qtde Funcionários -->
         <p></p>
         <!-- Option sobre faturamento -->
@@ -94,8 +135,8 @@ $paginaLocal = ' | Inicio - Informações da pesquisa';
             <select id="fatEmpresa" name="fatEmpresa" class="form-control"
                     title="Insira o faturamento médio anual da empresa" required>
                 <option selected value="">Faturamento anual</option>
-                <option value="60">Entre R$ 6 milhões a R$ 20 milhões</option>
-                <option value="61">Acima de R$ 20 milhões</option>
+                <option value="200">Entre R$ 6 milhões a R$ 20 milhões</option>
+                <option value="201">Acima de R$ 20 milhões</option>
             </select>
         </div>
         <!-- Option sobre faturamento -->
